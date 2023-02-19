@@ -1,2 +1,7 @@
+/out/
 /.idea/
-/target/
+/LeetCode.iml
+/.vscode
+/.fleet
+target
+*.class

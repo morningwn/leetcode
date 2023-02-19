@@ -1,6 +1,5 @@
 package com.github.morningwn.t2001_t2500.t2001_t2100.t2041_t2050;
 
-import cn.hutool.core.lang.UUID;
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
@@ -16,11 +15,6 @@ public class T2042 {
     public void test() {
         String s = "1 box has 3 blue 4 red 6 green and 12 yellow marbles";
         Out.println(areNumbersAscending(s));
-
-        System.out.println(UUID.fastUUID().toString(true));
-        System.out.println(UUID.fastUUID().toString(true));
-        System.out.println(UUID.fastUUID().toString(true));
-        System.out.println(UUID.fastUUID().toString(true));
     }
 
     public boolean areNumbersAscending(String s) {
