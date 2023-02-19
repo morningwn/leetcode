@@ -1,7 +1,7 @@
 /out/
 /.idea/
-/LeetCode.iml
 /.vscode
 /.fleet
 target
 *.class
+/*.iml
