@@ -26,5 +26,8 @@ add_executable(T1614 src/main/c/t1501_t2000/t1601_t1700/t1611_t1620/T1614.c)
 add_executable(T1816 src/main/c/t1501_t2000/t1801_t1900/t1811_t1820/T1816.c)
 add_executable(T2373 src/main/c/t2001_t2500/t2301_t2400/t2371_t2380/T2373.c)
 
+add_executable(T05_02 src/main/c/interview/T05_02.c)
 
 add_executable(T2373cpp src/main/cpp/t2001_t2500/t2301_t2400/t2371_t2380/T2373.cpp)
+
+add_executable(T05_02cpp src/main/cpp/interview/T05_02.cpp)
