@@ -20,4 +20,18 @@ public enum Tags {
         this.slug = slug;
         this.url = url;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSlug() {
+        return slug;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    
 }

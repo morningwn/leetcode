@@ -6,3 +6,4 @@ target
 *.class
 /*.iml
 /cmake-build-debug/
+/build/

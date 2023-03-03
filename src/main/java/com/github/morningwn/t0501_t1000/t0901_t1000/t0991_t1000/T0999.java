@@ -3,10 +3,6 @@ package com.github.morningwn.t0501_t1000.t0901_t1000.t0991_t1000;
 
 public class T0999 {
 
-    public T0999() {
-
-    }
-
     public int numRookCaptures(char[][] board) {
 
         //遍历，找到车的位置
@@ -59,9 +55,5 @@ public class T0999 {
         }
 
         return 0;
-    }
-
-    public void test() {
-        T0999 t0999 = new T0999();
     }
 }

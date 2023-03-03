@@ -21,7 +21,6 @@ public class T5455 {
     }
 
     public String minInteger(String num, int k) {
-        boolean flag = true;
         char[] nums = num.toCharArray();
         min = num.toCharArray();
         helper(nums, k, 0);

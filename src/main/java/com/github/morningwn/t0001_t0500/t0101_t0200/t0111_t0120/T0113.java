@@ -20,7 +20,7 @@ public class T0113 {
 
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         if (root != null) {
-            OnePath(root, sum, new ArrayList());
+            OnePath(root, sum, new ArrayList<>());
             return res;
         } else {
             return res;

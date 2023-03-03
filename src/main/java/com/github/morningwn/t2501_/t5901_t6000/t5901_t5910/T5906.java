@@ -32,7 +32,6 @@ public class T5906 {
     }
 
     public int countValidWords(String sentence) {
-        int length = sentence.length();
 
         int res = 0;
 

@@ -3,10 +3,6 @@ package com.github.morningwn.t0001_t0500.t0401_t0500.t0411_t0420;
 
 public class T0415 {
 
-    public T0415() {
-
-    }
-
     public String addStrings(String num1, String num2) {
 
         //结果长度为num1和num2较长的那个数的长度再加一
@@ -97,7 +93,4 @@ public class T0415 {
 
     }
 
-    public void test() {
-        T0415 t0415 = new T0415();
-    }
 }

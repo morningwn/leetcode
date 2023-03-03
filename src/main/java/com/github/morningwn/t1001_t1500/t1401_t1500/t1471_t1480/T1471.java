@@ -4,7 +4,6 @@ import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 import java.util.Arrays;
-import java.util.Map;
 
 /**
  * <a href="https://leetcode.cn/problems/the-k-strongest-values-in-an-array/">1471. 数组中的 k 个最强值</a>

@@ -44,7 +44,6 @@ public class T0022 {
          *左括号的个数小于n 才能继续放左括号
          *左括号和右括号满足上述条件的前提下都为n个，添加这个答案
          */
-        List<String> res = new ArrayList<>();
         generate("", n, n);
         return result;
     }

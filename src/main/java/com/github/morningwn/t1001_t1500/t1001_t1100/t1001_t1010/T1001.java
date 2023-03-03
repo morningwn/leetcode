@@ -2,6 +2,8 @@ package com.github.morningwn.t1001_t1500.t1001_t1100.t1001_t1010;
 
 import org.junit.Test;
 
+import com.github.morningwn.prefab.Out;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -23,6 +25,7 @@ public class T1001 {
 
         int[] res = gridIllumination(n, lamps, queries);
 
+        Out.println(res);
     }
 
     public int[] gridIllumination(int n, int[][] lamps, int[][] queries) {

@@ -13,14 +13,12 @@ public class T0017 {
     @Test
     public void test() {
 
-        String digits = "22ss";
+        String digits = "22";
 
         //String tmp = String.format( "%"+digits.length()+"s", "12" );
         //Out.println( tmp );
 
-        Out.println(letterCombinations("22"));      //[aa, ab, ac, ba, bb, bc, ca, cb, cc]
-
-        Out.println(letterCombinations("7"));
+        Out.println(letterCombinations(digits));
     }
 
     public List<String> letterCombinations(String digits) {

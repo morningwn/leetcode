@@ -9,9 +9,6 @@ import com.github.morningwn.prefab.TreeNode;
  * @version: 1.0
  */
 public class T0572 {
-    public T0572() {
-
-    }
 
     /**
      * 递归的调用，在查询到当前s树的根节点值与t树根节点的值相同后调用判罚是否和子节点相同的函数
@@ -76,9 +73,5 @@ public class T0572 {
         } else { //不同直接返回false
             return false;
         }
-    }
-
-    public void test() {
-        T0572 t0572 = new T0572();
     }
 }

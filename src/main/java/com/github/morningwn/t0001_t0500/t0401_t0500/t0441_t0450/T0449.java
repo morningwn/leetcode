@@ -91,22 +91,6 @@ public class T0449 {
             return root;
         }
 
-        private void helper(TreeNode treeNode, int num) {
-            if (treeNode.val < num) {
-                if (treeNode.right == null) {
-                    treeNode.right = new TreeNode(num);
-                } else {
-                    helper(treeNode.right, num);
-                }
-            } else {
-                if (treeNode.left == null) {
-                    treeNode.left = new TreeNode(num);
-                } else {
-                    helper(treeNode.left, num);
-                }
-            }
-        }
-
         private int getNum(int num, char c) {
             return num * 10 + c - '0';
         }

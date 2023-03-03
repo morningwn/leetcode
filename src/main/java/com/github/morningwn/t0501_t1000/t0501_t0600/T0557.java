@@ -21,7 +21,6 @@ public class T0557 {
 
         char[] words = s.toCharArray();
         StringBuilder sb = new StringBuilder();
-        StringBuilder tmp = new StringBuilder();
 
         int index = 0;
         int rev = 0;

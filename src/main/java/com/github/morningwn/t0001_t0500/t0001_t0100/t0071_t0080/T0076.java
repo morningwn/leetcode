@@ -39,8 +39,6 @@ public class T0076 {
         }
         Out.println(map);
 
-        Queue<List<Integer>> queue = new LinkedList<>();
-
         return "";
     }
 }

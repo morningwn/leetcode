@@ -53,7 +53,7 @@ public class T0039 {
             if (list == null) {
                 tmpLs = new ArrayList<Integer>();
             } else {
-                tmpLs = new ArrayList(list);
+                tmpLs = new ArrayList<>(list);
             }
 
             if (sum + nums[j] == target) {

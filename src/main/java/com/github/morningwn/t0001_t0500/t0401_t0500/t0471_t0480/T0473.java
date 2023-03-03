@@ -25,7 +25,6 @@ public class T0473 {
 //        int[] matchsticks = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 //        int[] matchsticks = {1,2,3,4,5,6,7,8,9,10,5,4,3,3,2};
         int[] matchsticks = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 102};
-        int[] m = {5, 5, 5, 5, 16, 4, 4, 4, 4, 4, 3, 3, 3, 3, 4};
 
         Out.println();
         Out.println(makesquare(matchsticks));

@@ -6,10 +6,6 @@ import java.util.Set;
 
 public class T0575 {
 
-    public T0575() {
-
-    }
-
     public int distributeCandies(int[] candies) {
 
         Set<Integer> set = new HashSet<>();
@@ -23,9 +19,5 @@ public class T0575 {
         } else {
             return set.size();
         }
-    }
-
-    public void test() {
-        T0575 t0575 = new T0575();
     }
 }
