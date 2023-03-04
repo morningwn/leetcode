@@ -19,6 +19,7 @@ add_executable(T0495 src/main/c/t0001_t0500/t0401_t0500/t0491_t0500/T0495.c)
 add_executable(T0561 src/main/c/t0501_t1000/t0501_t0600/t0561_t0570/T0561.c)
 add_executable(T0598 src/main/c/t0501_t1000/t0501_t0600/t0591_t0600/T0598.c)
 add_executable(T0747 src/main/c/t0501_t1000/t0701_t0800/t0741_t0750/T0747.c)
+add_executable(T0982 src/main/c/t0501_t1000/t0901_t1000/t0981_t0990/T0982.c)
 add_executable(T1005 src/main/c/t1001_t1500/t1000_t1100/t1001_t1010/T1005.c)
 add_executable(T1218 src/main/c/t1001_t1500/t1201_t1300/t1211_t1220/T1218.c)
 add_executable(T1487 src/main/c/t1001_t1500/t1401_t1500/t1481_t1490/T1487.c)
@@ -29,7 +30,8 @@ add_executable(T2373 src/main/c/t2001_t2500/t2301_t2400/t2371_t2380/T2373.c)
 
 add_executable(T05_02 src/main/c/interview/T05_02.c)
 
-add_executable(T2373cpp src/main/cpp/t2001_t2500/t2301_t2400/t2371_t2380/T2373.cpp)
+add_executable(T0982cpp src/main/cpp/t0501_t1000/t0901_t1000/t0981_t0990/T0982.cpp)
 add_executable(T1487cpp src/main/cpp/t1001_t1500/t1401_t1500/t1481_t1490/T1487.cpp)
+add_executable(T2373cpp src/main/cpp/t2001_t2500/t2301_t2400/t2371_t2380/T2373.cpp)
 
 add_executable(T05_02cpp src/main/cpp/interview/T05_02.cpp)
