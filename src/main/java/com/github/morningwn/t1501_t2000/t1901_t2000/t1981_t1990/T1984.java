@@ -1,4 +1,4 @@
-package com.github.morningwn.t1501_t2000.t1901_t2000;
+package com.github.morningwn.t1501_t2000.t1901_t2000.t1981_t1990;
 
 import java.util.Arrays;
 
