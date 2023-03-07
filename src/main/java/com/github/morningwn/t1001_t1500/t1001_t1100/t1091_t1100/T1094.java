@@ -6,6 +6,12 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * <a href="https://leetcode.cn/problems/car-pooling/">1094. 拼车</a>
+ *
+ * @author morningwn
+ * @date Created in
+ */
 public class T1094 {
 
     @Test
