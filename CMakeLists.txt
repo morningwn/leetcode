@@ -33,6 +33,8 @@ add_executable(T2373 src/main/c/t2001_t2500/t2301_t2400/t2371_t2380/T2373.c)
 
 add_executable(T05_02 src/main/c/interview/T05_02.c)
 
+add_executable(T047 src/main/c/to_offer/t041_t050/T047.c)
+
 add_executable(T0628cpp src/main/cpp/t0501_t1000/t0601_t0700/t0621_t0630/T0628.cpp)
 add_executable(T0982cpp src/main/cpp/t0501_t1000/t0901_t1000/t0981_t0990/T0982.cpp)
 add_executable(T1487cpp src/main/cpp/t1001_t1500/t1401_t1500/t1481_t1490/T1487.cpp)
@@ -41,3 +43,5 @@ add_executable(T1957cpp src/main/cpp/t1501_t2000/t1901_t2000/t1951_t1960/T1957.c
 add_executable(T2373cpp src/main/cpp/t2001_t2500/t2301_t2400/t2371_t2380/T2373.cpp)
 
 add_executable(T05_02cpp src/main/cpp/interview/T05_02.cpp)
+
+add_executable(T047cpp src/main/cpp/to_offer/t041_t050/T047.cpp)
