@@ -9,7 +9,6 @@ package com.github.morningwn.t1001_t1500.t1001_t1100.t1031_t1040;
 public class T1037 {
 
     public boolean isBoomerang(int[][] points) {
-
-        return false;
+        return (points[0][0] - points[1][0]) * (points[0][1] - points[2][1]) - (points[0][0] - points[2][0]) * (points[0][1] - points[1][1]) != 0;
     }
 }
