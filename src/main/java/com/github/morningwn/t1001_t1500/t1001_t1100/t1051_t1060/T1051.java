@@ -21,7 +21,6 @@ public class T1051 {
                 count++;
             }
         }
-
         return count;
     }
 }
