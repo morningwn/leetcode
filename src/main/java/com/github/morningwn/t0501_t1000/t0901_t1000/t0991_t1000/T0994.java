@@ -6,6 +6,12 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <a href="https://leetcode.cn/problems/rotting-oranges/">994. 腐烂的橘子</a>
+ *
+ * @author morningwn
+ * @create in 2020/3/4 20:59
+ */
 public class T0994 {
 
     @Test
