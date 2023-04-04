@@ -1,6 +1,12 @@
 package com.github.morningwn.t0501_t1000.t0901_t1000.t0991_t1000;
 
 
+/**
+ * <a href="https://leetcode.cn/problems/available-captures-for-rook/submissions/">999. 可以被一步捕获的棋子数</a>
+ *
+ * @author morningwn
+ * @create in 2020/3/26 20:59
+ */
 public class T0999 {
 
     public int numRookCaptures(char[][] board) {
