@@ -1,4 +1,4 @@
-package com.github.morningwn.t1001_t1500.t1301_t1400;
+package com.github.morningwn.t1001_t1500.t1301_t1400.t1331_t1340;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 数组大小减半
+ * <a href="https://leetcode.cn/problems/reduce-array-size-to-the-half/">1338. 数组大小减半</a>
  *
  * @author morningwn
  * @date 2020/11/10 22:57
