@@ -5,6 +5,12 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
+/**
+ * <a href="https://leetcode.cn/problems/adding-two-negabinary-numbers/">1073. 负二进制数相加</a>
+ *
+ * @author morningwn
+ * @create in
+ */
 public class T1073 {
 
     @Test
