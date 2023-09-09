@@ -32,3 +32,7 @@ vector<string> getFolderNames(vector<string>& names) {
 
     return folderNames;
 }
+
+int main () {
+    return 0;
+}

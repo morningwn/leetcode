@@ -2,11 +2,13 @@
 // Created by morningwn on 23-3-8.
 // https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/
 //
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
+
 int maxValue(int **grid, int gridSize, int *gridColSize) {
     int m = gridSize;
     int n = gridColSize[0];
@@ -19,4 +21,8 @@ int maxValue(int **grid, int gridSize, int *gridColSize) {
         }
     }
     return valueCount[m][n];
+}
+
+int main() {
+    return 0;
 }

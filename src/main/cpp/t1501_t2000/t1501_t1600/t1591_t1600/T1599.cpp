@@ -48,3 +48,7 @@ int minOperationsMaxProfit(vector<int> &customers, int boardingCost, int running
 
     return maxProfit > 0 ? minOperation : -1;
 }
+
+int main () {
+    return 0;
+}

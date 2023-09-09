@@ -20,3 +20,7 @@ int maxValue(vector<vector<int>> &grid) {
     }
     return valueCount[m][n];
 }
+
+int main () {
+    return 0;
+}

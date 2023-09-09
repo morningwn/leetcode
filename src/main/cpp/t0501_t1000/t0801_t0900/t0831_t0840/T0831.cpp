@@ -18,3 +18,7 @@ string maskPII(string s) {
         return pref[s.length() - 10] + "***-***-" + s.substr(s.length() - 4);
     }
 }
+
+int main () {
+    return 0;
+}

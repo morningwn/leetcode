@@ -43,3 +43,7 @@ int minOperationsMaxProfit(int *customers, int customersSize, int boardingCost, 
     }
     return maxProfit > 0 ? minOperation : -1;
 }
+
+int main () {
+    return 0;
+}

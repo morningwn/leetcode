@@ -2,9 +2,12 @@
 // Created by morningwn on 23-3-5.
 // https://leetcode.cn/problems/maximum-product-of-three-numbers/
 //
+
+#include <stdio.h>
+
 #define MAX(a, b) a > b ? a : b;
 
-int maximumProduct(int* nums, int numsSize){
+int maximumProduct(int *nums, int numsSize) {
     int max1 = -1000;
     int max2 = -1000;
     int max3 = -1000;
@@ -32,4 +35,8 @@ int maximumProduct(int* nums, int numsSize){
     }
 
     return MAX(max1 * max2 * max3, min1 * min2 * max1);
+}
+
+int main() {
+    return 0;
 }

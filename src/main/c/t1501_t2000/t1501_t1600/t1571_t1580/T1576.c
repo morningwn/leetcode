@@ -38,7 +38,7 @@ char *modifyString(char *s) {
 }
 
 int main() {
-    char s[] = "ubv?w";
+    char *s = "ubv?w";
     printf("s:%s\n", modifyString(s));
     printf("%i", 'a');
     return 0;

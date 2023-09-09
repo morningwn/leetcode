@@ -28,3 +28,7 @@ int minimumDeletions(char *s) {
     free(countB);
     return minDeletions;
 }
+
+int main () {
+    return 0;
+}

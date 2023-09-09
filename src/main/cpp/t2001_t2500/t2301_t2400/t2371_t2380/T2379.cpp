@@ -22,3 +22,7 @@ int minimumRecolors(string blocks, int k) {
     }
     return minCount;
 }
+
+int main () {
+    return 0;
+}

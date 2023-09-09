@@ -26,3 +26,7 @@ int minimumDeletions(string s) {
 
     return minDeletions;
 }
+
+int main () {
+    return 0;
+}

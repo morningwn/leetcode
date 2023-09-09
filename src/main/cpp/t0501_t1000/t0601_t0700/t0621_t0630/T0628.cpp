@@ -34,3 +34,7 @@ int maximumProduct(vector<int> &nums) {
     }
     return max(max1 * max2 * max3, min1 * min2 * max1);
 }
+
+int main () {
+    return 0;
+}

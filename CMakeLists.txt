@@ -4,7 +4,13 @@ project(LeetCode LANGUAGES C CXX)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")  #设置c++的编译选项
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")  #设置c的编译选项
 #aux_source_directory(. DIR_SRCS)
-#set(CMAKE_EXPORT_COMPILE_COMMANDS True)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# 动态库文件目录
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY target/lib)
+
+# 可执行文件目录
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY target/bin)
 
 INCLUDE_DIRECTORIES(includes)
 

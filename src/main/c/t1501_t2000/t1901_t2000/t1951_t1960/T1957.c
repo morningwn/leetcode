@@ -24,3 +24,7 @@ char *makeFancyString(char *s) {
 
     return fancyStr;
 }
+
+int main () {
+    return 0;
+}

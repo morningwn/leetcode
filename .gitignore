@@ -7,3 +7,5 @@ target
 /*.iml
 /cmake-build-debug/
 /build/
+/CMakeFiles/
+CMakeCache.txt

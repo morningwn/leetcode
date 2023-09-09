@@ -68,7 +68,7 @@ char **getFolderNames(char **names, int namesSize, int *returnSize) {
 }
 
 int main() {
-    char **names[] = {"pes", "fifa", "gta", "pes(2019)"};
+    char **names = {"pes", "fifa", "gta", "pes(2019)"};
     int returnSize = 0;
     char **folderNames = getFolderNames(names, 3, &returnSize);
     printf("returnSize: %d\n", returnSize);
