@@ -9,80 +9,61 @@ import java.util.List;
 import java.util.Queue;
 
 /**
+ * <a href="https://leetcode.cn/problems/course-schedule-ii/">210. 课程表 II</a>
+ *
  * @author morningwn
- * @description: 课程表 II
- * @date Created in 2020/5/17 20:41
- * @version: 1.0
+ * @date Created in 2023/9/10 20:41
  */
 public class T0210 {
 
     @Test
     public void test() {
-        int[][] prerequisites = {};
+        int[][] prerequisites = {{1, 0}};
 
-        Out.println(findOrder(1, prerequisites).length);
+        Out.println(findOrder(2, prerequisites));
     }
 
     public int[] findOrder(int numCourses, int[][] prerequisites) {
-        if (prerequisites.length == 0) {
-            int[] res = new int[numCourses];
-            for (int i = 0; i < numCourses; i++) {
-                res[i] = i;
-            }
-            return res;
-        }
-        Queue<List<Integer>> queue = new LinkedList<>();
+        int[] visited = new int[numCourses];
+        int[][] graph = new int[numCourses][numCourses];
+        List<Integer> res = new ArrayList<>();
 
         for (int[] prerequisite : prerequisites) {
-            int size = queue.size();
+            graph[prerequisite[0]][prerequisite[1]] = 1;
+        }
 
-            if (size == 0) {
-                List<Integer> tmp = new ArrayList<>();
-                tmp.add(prerequisite[1]);
-                tmp.add(prerequisite[0]);
-                queue.offer(tmp);
-            } else {
-                Out.println(queue + "\t " + prerequisite[0] + "\t" + prerequisite[1]);
-                for (int i = 0; i < size; i++) {
-                    List<Integer> tmp = queue.poll();
-                    int index0 = tmp.indexOf(prerequisite[0]);
-                    int index1 = tmp.indexOf(prerequisite[1]);
+        for (int i = 0; i < numCourses; i++) {
+            boolean dfs = dfs(visited, graph, i, numCourses, res);
+            if (!dfs) {
+                return new int[]{};
+            }
+        }
 
-                    if (index0 != -1 && index1 != -1) {
-                        if (index0 > index1) {
-                            queue.offer(tmp);
-                        }
-                    } else if (index0 == -1 && index1 != -1) {
-                        for (int j = index1 + 1; j <= tmp.size(); j++) {
-                            List<Integer> t = new ArrayList<>(tmp);
-                            t.add(j, prerequisite[0]);
-                            queue.offer(t);
-                        }
-                    } else if (index0 != -1 && index1 == -1) {
-                        for (int j = 0; j < index0; j++) {
-                            List<Integer> t = new ArrayList<>(tmp);
-                            t.add(j, prerequisite[1]);
-                            queue.offer(t);
-                        }
-                    } else {
-                        List<Integer> t = new ArrayList<>(tmp);
-                        t.add(prerequisite[1]);
-                        t.add(prerequisite[0]);
-                        queue.offer(t);
+        int[] orders = new int[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            orders[i] = res.get(i);
+        }
+        return orders;
+    }
+
+    public boolean dfs(int[] visited, int[][] graph, int i, int numCourses, List<Integer> order) {
+        if (visited[i] == 1) {
+            return true;
+        } else if (visited[i] == -1) {
+            return false;
+        }
+        visited[i] = -1;
+        for (int j = 0; j < numCourses; j++) {
+            if (graph[i][j] == 1) {
+                if (visited[j] != 1) {
+                    if (!dfs(visited, graph, j, numCourses, order)) {
+                        return false;
                     }
                 }
             }
         }
-        if (queue.size() > 0) {
-            int[] res = new int[numCourses];
-            List<Integer> tmp = queue.poll();
-            for (int i = 0; i < numCourses; i++) {
-                res[i] = tmp.get(i);
-            }
-            return res;
-        } else {
-            return new int[0];
-        }
+        order.add(i);
+        visited[i] = 1;
+        return true;
     }
-
 }
