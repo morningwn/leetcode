@@ -4,10 +4,9 @@ import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
- * 实现 Trie (前缀树)
+ * <a href="https://leetcode.cn/problems/implement-trie-prefix-tree/">208. 实现 Trie (前缀树)</a>
  *
  * @author morningwn
- * @version 1.0
  * @date Created in 2020-08-21 11:31
  */
 public class T0208 {
@@ -20,79 +19,80 @@ public class T0208 {
         Out.println(trie.startsWith("a"));
     }
 
-}
+    class Trie {
+        private final TrieNode root;
 
-class Trie {
-    private final TrieNode root;
-
-    /**
-     * Initialize your data structure here.
-     */
-    public Trie() {
-        root = new TrieNode();
-    }
-
-    /**
-     * Inserts a word into the trie.
-     */
-    public void insert(String word) {
-
-        char[] chars = word.toCharArray();
-        TrieNode cur = root;
-        for (char w : chars) {
-            if (cur.children[w - 'a'] == null) {
-                cur.children[w - 'a'] = new TrieNode(w);
-            }
-            cur = cur.children[w - 'a'];
-        }
-        cur.isWord = true;
-    }
-
-    /**
-     * Returns if the word is in the trie.
-     */
-    public boolean search(String word) {
-        char[] chars = word.toCharArray();
-        TrieNode cur = root;
-        for (char w : chars) {
-            if (cur.children[w - 'a'] == null) {
-                return false;
-            }
-            cur = cur.children[w - 'a'];
+        /**
+         * Initialize your data structure here.
+         */
+        public Trie() {
+            root = new TrieNode();
         }
 
-        return cur.isWord;
-    }
+        /**
+         * Inserts a word into the trie.
+         */
+        public void insert(String word) {
 
-    /**
-     * Returns if there is any word in the trie that starts with the given prefix.
-     */
-    public boolean startsWith(String prefix) {
-        char[] chars = prefix.toCharArray();
-        TrieNode cur = root;
-        for (char w : chars) {
-            if (cur.children[w - 'a'] == null) {
-                return false;
+            char[] chars = word.toCharArray();
+            TrieNode cur = root;
+            for (char w : chars) {
+                if (cur.children[w - 'a'] == null) {
+                    cur.children[w - 'a'] = new TrieNode(w);
+                }
+                cur = cur.children[w - 'a'];
             }
-            cur = cur.children[w - 'a'];
+            cur.isWord = true;
         }
 
-        return true;
+        /**
+         * Returns if the word is in the trie.
+         */
+        public boolean search(String word) {
+            char[] chars = word.toCharArray();
+            TrieNode cur = root;
+            for (char w : chars) {
+                if (cur.children[w - 'a'] == null) {
+                    return false;
+                }
+                cur = cur.children[w - 'a'];
+            }
+
+            return cur.isWord;
+        }
+
+        /**
+         * Returns if there is any word in the trie that starts with the given prefix.
+         */
+        public boolean startsWith(String prefix) {
+            char[] chars = prefix.toCharArray();
+            TrieNode cur = root;
+            for (char w : chars) {
+                if (cur.children[w - 'a'] == null) {
+                    return false;
+                }
+                cur = cur.children[w - 'a'];
+            }
+
+            return true;
+        }
+    }
+
+    class TrieNode {
+        char val;
+        TrieNode[] children;
+        boolean isWord;
+
+        public TrieNode() {
+            this(' ');
+        }
+
+        public TrieNode(char val) {
+            this.val = val;
+            children = new TrieNode[26];
+            isWord = false;
+        }
     }
 }
 
-class TrieNode {
-    char val;
-    TrieNode[] children;
-    boolean isWord;
 
-    public TrieNode() {
-        this(' ');
-    }
-
-    public TrieNode(char val) {
-        this.val = val;
-        children = new TrieNode[26];
-        isWord = false;
-    }
-}
