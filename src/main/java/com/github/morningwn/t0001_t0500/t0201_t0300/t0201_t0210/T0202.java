@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * <a href="https://leetcode.cn/problems/happy-number/description/">202. 快乐数</a>
+ *
  * @author morningwn
- * @description: 快乐数
  * @date Created in 2020/4/30 9:11
- * @version: 1.0
  */
 public class T0202 {
 
