@@ -4,10 +4,9 @@ import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
- * 数字范围按位与
+ * <a href="https://leetcode.cn/problems/bitwise-and-of-numbers-range/description/">201. 数字范围按位与</a>
  *
  * @author morningwn
- * @version 1.0
  * @date Created in 2020-08-23 18:49
  */
 public class T0201 {
