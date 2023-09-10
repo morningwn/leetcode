@@ -8,6 +8,12 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <a href="https://leetcode.cn/problems/reverse-linked-list/description/">206. 反转链表</a>
+ *
+ * @author morningwn
+ * @date Created in
+ */
 public class T0206 {
 
     @Test
