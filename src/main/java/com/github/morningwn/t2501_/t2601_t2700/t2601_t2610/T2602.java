@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t2501_t2600.t2591_t2600;
+package com.github.morningwn.t2501_.t2601_t2700.t2601_t2610;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
