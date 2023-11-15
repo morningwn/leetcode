@@ -3,6 +3,8 @@
 // https://leetcode.cn/problems/maximum-sum-with-exactly-k-elements/
 // Created by Mac on 2023/11/15.
 
+#include <stdio.h>
+
 int maximizeSum(int *nums, int numsSize, int k) {
     int maxNum = nums[0];
     for (int i = 0; i < numsSize; ++i) {
@@ -11,4 +13,8 @@ int maximizeSum(int *nums, int numsSize, int k) {
         }
     }
     return maxNum * k + (((k - 1) * k) / 2);
+}
+
+int main() {
+    printf("2656\n");
 }
