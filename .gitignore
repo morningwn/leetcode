@@ -9,3 +9,4 @@ target
 /build/
 /CMakeFiles/
 CMakeCache.txt
+/Makefile

@@ -24,17 +24,17 @@ import java.util.List;
  */
 public class Main {
 
-    private static String baseDir = "C:\\Users\\morni\\project\\leetcode\\src\\main\\java\\";
+    private static String baseDir = "/Users/mac/IdeaProjects/leetcode/src/main/java/";
 
-    private static final String graphql = "https://leetcode-cn.com/graphql";
-    private static String detailReq1 = "{  \"operationName\": \"questionData\",  \"variables\": {    \"titleSlug\": \"";
-    private static String detailReq2 = "\"  },  \"query\": \"query questionData($titleSlug: String!) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    titleSlug\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    contributors {\\n      username\\n      profileUrl\\n      avatarUrl\\n      __typename\\n    }\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      id\\n      canSeeDetail\\n      __typename\\n    }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    __typename\\n  }\\n}\\n\"}";
+    public static final String graphql = "https://leetcode-cn.com/graphql";
+    public static String detailReq1 = "{  \"operationName\": \"questionData\",  \"variables\": {    \"titleSlug\": \"";
+    public static String detailReq2 = "\"  },  \"query\": \"query questionData($titleSlug: String!) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    titleSlug\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    contributors {\\n      username\\n      profileUrl\\n      avatarUrl\\n      __typename\\n    }\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      id\\n      canSeeDetail\\n      __typename\\n    }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    __typename\\n  }\\n}\\n\"}";
 
-    private static String tagReq = "{  \"query\": \"\\n    query questionTagTypeWithTags {\\n  questionTagTypeWithTags {\\n    name\\n    transName\\n    tagRelation {\\n      questionNum\\n      tag {\\n        name\\n        id\\n        nameTranslated\\n        slug\\n      }\\n    }\\n  }\\n}\\n    \",  \"variables\": {}}";
+    public static String tagReq = "{  \"query\": \"\\n    query questionTagTypeWithTags {\\n  questionTagTypeWithTags {\\n    name\\n    transName\\n    tagRelation {\\n      questionNum\\n      tag {\\n        name\\n        id\\n        nameTranslated\\n        slug\\n      }\\n    }\\n  }\\n}\\n    \",  \"variables\": {}}";
 
-    private static String listReq1 = "{ \"query\": \"\\n    query problemsetQuestionList($categorySlug: String, $limit: Int, $skip: Int, $filters: QuestionListFilterInput) {\\n  problemsetQuestionList(\\n    categorySlug: $categorySlug\\n    limit: $limit\\n    skip: $skip\\n    filters: $filters\\n  ) {\\n    hasMore\\n    total\\n    questions {\\n      acRate\\n      difficulty\\n      freqBar\\n      frontendQuestionId\\n      isFavor\\n      paidOnly\\n      solutionNum\\n      status\\n      title\\n      titleCn\\n      titleSlug\\n      topicTags {\\n        name\\n        nameTranslated\\n        id\\n        slug\\n      }\\n      extra {\\n        hasVideoSolution\\n        topCompanyTags {\\n          imgUrl\\n          slug\\n          numSubscribed\\n        }\\n      }\\n    }\\n  }\\n}\\n    \", \"variables\": {   \"categorySlug\": \"\",   \"skip\": ";
-    private static String listReq2 = ",   \"limit\": ";
-    private static String listReq3 = ",   \"filters\": {} }}";
+    public static String listReq1 = "{ \"query\": \"\\n    query problemsetQuestionList($categorySlug: String, $limit: Int, $skip: Int, $filters: QuestionListFilterInput) {\\n  problemsetQuestionList(\\n    categorySlug: $categorySlug\\n    limit: $limit\\n    skip: $skip\\n    filters: $filters\\n  ) {\\n    hasMore\\n    total\\n    questions {\\n      acRate\\n      difficulty\\n      freqBar\\n      frontendQuestionId\\n      isFavor\\n      paidOnly\\n      solutionNum\\n      status\\n      title\\n      titleCn\\n      titleSlug\\n      topicTags {\\n        name\\n        nameTranslated\\n        id\\n        slug\\n      }\\n      extra {\\n        hasVideoSolution\\n        topCompanyTags {\\n          imgUrl\\n          slug\\n          numSubscribed\\n        }\\n      }\\n    }\\n  }\\n}\\n    \", \"variables\": {   \"categorySlug\": \"\",   \"skip\": ";
+    public static String listReq2 = ",   \"limit\": ";
+    public static String listReq3 = ",   \"filters\": {} }}";
 
     public static void main(String[] args) throws TemplateException, IOException {
 //        getTag();
@@ -59,15 +59,17 @@ public class Main {
         HttpRequest post = HttpUtil.createPost(graphql);
         post.body(detailReq1 + titleSlug + detailReq2);
         HttpResponse response = post.execute();
+
+        System.out.println(response.body());
         JSON resp = JSONUtil.parse(response.body());
 
         JSONObject jsonDetail = resp.getByPath("data.question", JSONObject.class);
         Detail detail = new Detail();
-        detail.setId(jsonDetail.getByPath("questionId", Integer.class));
+        detail.setId(jsonDetail.getByPath("questionFrontendId", Integer.class));
         detail.setTitle(jsonDetail.getByPath("translatedTitle", String.class));
         detail.setTitleSlug(jsonDetail.getByPath("titleSlug", String.class));
         detail.setPackageName("com.github.morningwn." + getPath(detail.getId()));
-        detail.setClassName("T" + format(detail.getId()));
+        detail.setClassName("J" + format(detail.getId()));
         JSONArray codeSnippets = jsonDetail.getByPath("codeSnippets", JSONArray.class);
         if (codeSnippets == null) {
             return null;
@@ -300,7 +302,8 @@ public class Main {
 
     public static void makeFile(Detail detail) throws IOException, TemplateException {
         Configuration cfg = new Configuration(Configuration.VERSION_2_3_22);
-        cfg.setDirectoryForTemplateLoading(new File("C:\\Users\\morni\\IdeaProjects\\LeetCode\\src\\main\\java\\com\\github\\morningwn\\create"));
+
+        cfg.setDirectoryForTemplateLoading(new File("/Users/mac/IdeaProjects/leetcode/src/main/java/com/github/morningwn/create"));
         Template template = cfg.getTemplate("Java.ftl");
         File file = new File(baseDir + detail.getPackageName().replaceAll("\\.", "/") + "/" + detail.getClassName() + ".java");
         if (!file.getParentFile().exists()) {
