@@ -44,7 +44,7 @@ public class Today {
 
         String titleSlug = todayRecord.getByPath("question.titleSlug", String.class);
         Detail detail = Main.getDetail(titleSlug);
-
+        System.out.println(JSONUtil.toJsonStr(detail));
         try {
             Main.makeFile(detail);
         } catch (Exception e) {

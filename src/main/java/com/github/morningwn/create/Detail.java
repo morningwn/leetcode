@@ -2,6 +2,8 @@ package com.github.morningwn.create;
 
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
+import com.github.morningwn.tag.Difficulty;
+import com.github.morningwn.tag.Topic;
 
 import java.util.List;
 
@@ -16,6 +18,8 @@ public class Detail {
     private String titleSlug;
     private String javaCode;
     public String className;
+    public List<String> topics;
+    private String difficulty;
     private List<String> importClassList;
     private String dataTime = DateUtil.formatDateTime(DateTime.now());
 
@@ -81,5 +85,21 @@ public class Detail {
 
     public String getDataTime() {
         return dataTime;
+    }
+
+    public List<String> getTopics() {
+        return topics;
+    }
+
+    public void setTopics(List<String> topics) {
+        this.topics = topics;
+    }
+
+    public String getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(String difficulty) {
+        this.difficulty = difficulty;
     }
 }

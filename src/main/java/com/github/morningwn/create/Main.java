@@ -7,6 +7,8 @@ import cn.hutool.json.JSON;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
+import com.github.morningwn.tag.Difficulty;
+import com.github.morningwn.tag.Topic;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -70,6 +72,8 @@ public class Main {
         detail.setTitleSlug(jsonDetail.getByPath("titleSlug", String.class));
         detail.setPackageName("com.github.morningwn." + getPath(detail.getId()));
         detail.setClassName("J" + format(detail.getId()));
+        detail.setDifficulty(jsonDetail.getByPath("difficulty", String.class));
+        detail.setTopics(getTopicTags(jsonDetail.getByPath("topicTags", JSONArray.class)));
         JSONArray codeSnippets = jsonDetail.getByPath("codeSnippets", JSONArray.class);
         if (codeSnippets == null) {
             return null;
@@ -158,10 +162,9 @@ public class Main {
                         " *     TreeNode right;\n" +
                         " *     TreeNode(int x) { val = x; }\n" +
                         " * }\n" +
-                        " */", "")
-                ;
+                        " */", "");
 
-        if (replace.contains("public Solution(")){
+        if (replace.contains("public Solution(")) {
             return "";
         }
         if (replace.contains("class ")) {
@@ -311,6 +314,26 @@ public class Main {
         }
         FileWriter fileWriter = new FileWriter(file);
         template.process(detail, fileWriter);
+    }
+
+    public static List<String> getTopicTags(JSONArray array) {
+        Iterator<JSONObject> iterator = array.jsonIter().iterator();
+        List<String> topics = new ArrayList<>();
+        while (iterator.hasNext()) {
+            JSONObject jsonObject = iterator.next();
+            String name = jsonObject.getByPath("name", String.class);
+
+            switch (name) {
+                case "Hash Table":
+                    topics.add("HashTable");
+                    break;
+                default:
+                    // String...
+                    topics.add(name);
+                    break;
+            }
+        }
+        return topics;
     }
 
 }
