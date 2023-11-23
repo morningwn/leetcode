@@ -1,5 +1,8 @@
 package com.github.morningwn.create;
 
+import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUtil;
+
 import java.util.List;
 
 /**
@@ -14,6 +17,7 @@ public class Detail {
     private String javaCode;
     public String className;
     private List<String> importClassList;
+    private String dataTime = DateUtil.formatDateTime(DateTime.now());
 
     public String getClassName() {
         return className;
@@ -73,5 +77,9 @@ public class Detail {
 
     public void setImportClassList(List<String> importClassList) {
         this.importClassList = importClassList;
+    }
+
+    public String getDataTime() {
+        return dataTime;
     }
 }

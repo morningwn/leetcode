@@ -10,7 +10,7 @@ import ${importClass}
 * <a href="https://leetcode.cn/problems/${titleSlug}/">${id}. ${title}</a>
 *
 * @author morningwn
-* @date
+* @date ${dataTime}
 */
 public class ${className} {
 
