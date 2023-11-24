@@ -7,5 +7,8 @@ package com.github.morningwn.tag;
 public enum Topic {
     HashTable,
     String,
+    Array,
+    TwoPointers,
+    Sorting,
     ;
 }

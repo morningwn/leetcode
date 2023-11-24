@@ -5,5 +5,7 @@ package com.github.morningwn.tag;
  * @date 2023/11/23 10:35
  */
 public enum Difficulty {
-    Medium
+    Easy,
+    Medium,
+    ;
 }

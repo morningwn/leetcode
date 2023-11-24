@@ -327,6 +327,9 @@ public class Main {
                 case "Hash Table":
                     topics.add("HashTable");
                     break;
+                case "Two Pointers":
+                    topics.add("TwoPointers");
+                    break;
                 default:
                     // String...
                     topics.add(name);
