@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t2701_t2800.t2751_t2760;
+package com.github.morningwn.t2501_t3000.t2701_t2800.t2751_t2760;
 
 import com.github.morningwn.prefab.FormatInput;
 import com.github.morningwn.prefab.Out;
