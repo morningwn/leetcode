@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t2501_t2600.t2591_t2600;
+package com.github.morningwn.t2501_t3000.t2501_t2600.t2591_t2600;
 
 /**
  * <a href="https://leetcode.cn/problems/check-knight-tour-configuration/description/">2596. 检查骑士巡视方案</a>
@@ -6,7 +6,7 @@ package com.github.morningwn.t2501_.t2501_t2600.t2591_t2600;
  * @author morningwn
  * @date Created in 2023/9/13 21:46
  */
-public class T2596 {
+public class J2596 {
 
     public boolean checkValidGrid(int[][] grid) {
         if (grid[0][0] != 0) {
