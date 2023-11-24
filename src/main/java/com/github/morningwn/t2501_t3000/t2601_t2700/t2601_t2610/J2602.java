@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t2601_t2700.t2601_t2610;
+package com.github.morningwn.t2501_t3000.t2601_t2700.t2601_t2610;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import java.util.*;
  * @author morningwn
  * @create in 2023/4/1 10:12
  */
-public class T2602 {
+public class J2602 {
 
     @Test
     public void test() {
