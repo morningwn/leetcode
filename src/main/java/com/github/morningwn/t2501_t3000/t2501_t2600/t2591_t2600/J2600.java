@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t2601_t2700.t2601_t2610;
+package com.github.morningwn.t2501_t3000.t2501_t2600.t2591_t2600;
 
 /**
  * <a href="https://leetcode.cn/problems/k-items-with-the-maximum-sum/">2600. K 件物品的最大和</a>
@@ -6,7 +6,7 @@ package com.github.morningwn.t2501_.t2601_t2700.t2601_t2610;
  * @author morningwn
  * @create in 2023/4/1 09:50
  */
-public class T2600 {
+public class J2600 {
     public int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k) {
         if (numOnes >= k) {
             return k;
