@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_t3000.t2501_t2600.t2651_t2660;
+package com.github.morningwn.t2501_t3000.t2601_t2700.t2651_t2660;
 
 /**
  * <a href="https://leetcode.cn/problems/maximum-sum-with-exactly-k-elements/">2656. K 个元素的最大和</a>
