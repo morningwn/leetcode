@@ -1,7 +1,7 @@
 package com.github.morningwn.tag;
 
 /**
- * @author wangjianing
+ * @author morningwn
  * @date 2023/11/23 10:35
  */
 public enum Topic {
@@ -13,5 +13,6 @@ public enum Topic {
     Stack,
     DynamicProgramming,
     MonotonicStack,
+    SlidingWindow,
     ;
 }

@@ -44,13 +44,13 @@ public class Main {
             if (!file.exists()) {
                 file.mkdirs();
             }
-//            for (String titleSlug : getList(i, i + 100)) {
-//                Detail detail = getDetail(titleSlug);
-//                if (detail == null) {
-//                    continue;
-//                }
-//                makeFile(detail);
-//            }
+            for (String titleSlug : getList(i, i + 100)) {
+                Detail detail = getDetail(titleSlug);
+                if (detail == null) {
+                    continue;
+                }
+                makeFile(detail);
+            }
         }
 
     }
@@ -333,6 +333,9 @@ public class Main {
                     break;
                 case "Monotonic Stack":
                     topics.add("MonotonicStack");
+                    break;
+                case "Sliding Window":
+                    topics.add("SlidingWindow");
                     break;
                 default:
                     // String...
