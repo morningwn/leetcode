@@ -7,8 +7,6 @@ import cn.hutool.json.JSON;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -329,6 +327,12 @@ public class Main {
                     break;
                 case "Two Pointers":
                     topics.add("TwoPointers");
+                    break;
+                case "Dynamic Programming":
+                    topics.add("DynamicProgramming");
+                    break;
+                case "Monotonic Stack":
+                    topics.add("MonotonicStack");
                     break;
                 default:
                     // String...

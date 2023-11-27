@@ -10,5 +10,8 @@ public enum Topic {
     Array,
     TwoPointers,
     Sorting,
+    Stack,
+    DynamicProgramming,
+    MonotonicStack,
     ;
 }
