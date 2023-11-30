@@ -1,7 +1,7 @@
 /**
  * <a href="https://leetcode-cn.com/problems/truncate-sentence/">1816. 截断句子</a>
  *
- * @author wangjianing
+ * @author morningwn
  * @date Created in 2021/12/6 10:39
  */
 
