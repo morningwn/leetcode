@@ -319,26 +319,10 @@ public class Main {
         List<String> topics = new ArrayList<>();
         while (iterator.hasNext()) {
             JSONObject jsonObject = iterator.next();
-            String name = jsonObject.getByPath("name", String.class);
+            String name = jsonObject.getByPath("name", String.class).replace(" ", "");
 
             switch (name) {
-                case "Hash Table":
-                    topics.add("HashTable");
-                    break;
-                case "Two Pointers":
-                    topics.add("TwoPointers");
-                    break;
-                case "Dynamic Programming":
-                    topics.add("DynamicProgramming");
-                    break;
-                case "Monotonic Stack":
-                    topics.add("MonotonicStack");
-                    break;
-                case "Sliding Window":
-                    topics.add("SlidingWindow");
-                    break;
                 default:
-                    // String...
                     topics.add(name);
                     break;
             }

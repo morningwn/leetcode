@@ -14,5 +14,9 @@ public enum Topic {
     DynamicProgramming,
     MonotonicStack,
     SlidingWindow,
+    Design,
+    Queue,
+    LinkedList,
+    DataStream,
     ;
 }
