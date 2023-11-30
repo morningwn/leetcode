@@ -1,15 +1,24 @@
 package com.github.morningwn.t1501_t2000.t1601_t1700.t1651_t1660;
 
 import com.github.morningwn.prefab.Out;
+import com.github.morningwn.tag.Difficulty;
+import com.github.morningwn.tag.Topic;
 import org.junit.Test;
+
 
 /**
  * <a href="https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/">1653. 使字符串平衡的最少删除次数</a>
+ * <ul>
+ * <li>{@link Difficulty#Medium}</li>
+ * <li>{@link Topic#Stack}</li>
+ * <li>{@link Topic#String}</li>
+ * <li>{@link Topic#DynamicProgramming}</li>
+ * </ul>
  *
  * @author morningwn
- * @date Created in 2023/3/6 15:23
+ * @date 2023-11-30 16:54:41
  */
-public class T1653 {
+public class J1653 {
 
     @Test
     public void test() {
