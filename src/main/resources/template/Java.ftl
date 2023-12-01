@@ -20,7 +20,7 @@ import ${importClass}
 * @author morningwn
 * @date ${dataTime}
 */
-public class ${className} {
+public class J${fileSuffix} {
 
 @Test
 public void test() {

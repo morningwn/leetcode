@@ -7,5 +7,6 @@ package com.github.morningwn.tag;
 public enum Difficulty {
     Easy,
     Medium,
+    Hard
     ;
 }
