@@ -23,5 +23,15 @@ public enum Topic {
     DepthFirstSearch,
     BinarySearchTree,
     BinaryTree,
+    Math,
+    PrefixSum,
+    BitManipulation,
+    Backtracking,
+    Bitmask,
+    BinarySearch,
+    Randomized,
+    BreadthFirstSearch,
+    HashFunction,
+    Simulation,
     ;
 }

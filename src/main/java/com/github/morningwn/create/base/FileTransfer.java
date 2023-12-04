@@ -1,5 +1,6 @@
 package com.github.morningwn.create.base;
 
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
 import com.github.morningwn.tag.Topic;
@@ -25,7 +26,10 @@ public class FileTransfer {
     }
 
 
-    public static Detail getDetail(Question question, SubmissionDetail submissionDetail) {
+    public static Detail getDetail(Question question,  Map<String, SubmissionDetail> submissionDetailMap) {
+        if (question == null || CollUtil.isEmpty(question.getCodeSnippets())) {
+            return null;
+        }
         Detail detail = new Detail();
         detail.setId(Integer.parseInt(question.getFrontendQuestionId()));
         detail.setTitle(question.getTitleCn());
@@ -50,24 +54,24 @@ public class FileTransfer {
                     System.out.println(x);
                 })
                 .collect(Collectors.toList()));
+        for (CodeSnippet codeSnippet : question.getCodeSnippets()) {
+            String langSlug = codeSnippet.getLangSlug();
+            SubmissionDetail submissionDetail = submissionDetailMap.get(langSlug);
+            String javaCode = "";
 
-        if (Objects.nonNull(submissionDetail)) {
-            detail.setDataTime(DateUtil.formatDateTime(DateTime.of(Long.parseLong(submissionDetail.getTimestamp()) * 1000)));
-            String javaCode = parsePassJavaCode(submissionDetail.getSubmissionCode());
-            detail.setImportClassList(parseJavaImport(javaCode));
-            detail.setJavaCode(javaCode);
-        } else {
-            for (CodeSnippet codeSnippet : question.getCodeSnippets()) {
-                String langSlug = codeSnippet.getLangSlug();
-                if (langSlug.equals("java")) {
-                    String javaCode = parseJavaCode(codeSnippet.getCode());
-                    detail.setImportClassList(parseJavaImport(javaCode));
-                    detail.setJavaCode(javaCode);
-                } else if (langSlug.equals("c")) {
-                    String cCode = parseCCode(codeSnippet.getCode());
-                    detail.setImportClassList(parseCImport(cCode));
-                    detail.setcCode(cCode);
+            if (langSlug.equals("java")) {
+                if (Objects.nonNull(submissionDetail)) {
+                    detail.setDataTime(DateUtil.formatDateTime(DateTime.of(Long.parseLong(submissionDetail.getTimestamp()) * 1000)));
+                    javaCode = parsePassJavaCode(submissionDetail.getSubmissionCode());
+                } else {
+                    javaCode = codeSnippet.getCode();
                 }
+                detail.setImportClassList(parseJavaImport(javaCode));
+                detail.setJavaCode(javaCode);
+            } else if (langSlug.equals("c")) {
+                String cCode = parseCCode(codeSnippet.getCode());
+                detail.setIncludeList(parseCImport(cCode));
+                detail.setcCode(cCode);
             }
         }
         return detail;
@@ -350,6 +354,9 @@ public class FileTransfer {
         }
         if (x.equals("Depth-FirstSearch")) {
             return "DepthFirstSearch";
+        }
+        if (x.equals("Breadth-FirstSearch")) {
+            return "BreadthFirstSearch";
         }
         return x;
     }

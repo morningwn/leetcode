@@ -15,6 +15,9 @@ public class FileMaker {
     private static String baseDir = "/Users/mac/IdeaProjects/leetcode/src/main/";
 
     public static void makeAllFile(Detail detail) {
+        if (detail == null) {
+            return;
+        }
         makeJavaFile(detail);
         makeCFile(detail);
     }
