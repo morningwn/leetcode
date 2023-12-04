@@ -54,17 +54,19 @@ public class FileTransfer {
         if (Objects.nonNull(submissionDetail)) {
             detail.setDataTime(DateUtil.formatDateTime(DateTime.of(Long.parseLong(submissionDetail.getTimestamp()) * 1000)));
             String javaCode = parsePassJavaCode(submissionDetail.getSubmissionCode());
-            detail.setImportClassList(parseImport(javaCode));
+            detail.setImportClassList(parseJavaImport(javaCode));
             detail.setJavaCode(javaCode);
         } else {
             for (CodeSnippet codeSnippet : question.getCodeSnippets()) {
                 String langSlug = codeSnippet.getLangSlug();
                 if (langSlug.equals("java")) {
                     String javaCode = parseJavaCode(codeSnippet.getCode());
-                    detail.setImportClassList(parseImport(javaCode));
+                    detail.setImportClassList(parseJavaImport(javaCode));
                     detail.setJavaCode(javaCode);
                 } else if (langSlug.equals("c")) {
-                    detail.setcCode(codeSnippet.getCode());
+                    String cCode = parseCCode(codeSnippet.getCode());
+                    detail.setImportClassList(parseCImport(cCode));
+                    detail.setcCode(cCode);
                 }
             }
         }
@@ -285,7 +287,7 @@ public class FileTransfer {
         return replace.substring(0, replace.length() - 1);
     }
 
-    private static List<String> parseImport(String javaCode) {
+    private static List<String> parseJavaImport(String javaCode) {
         List<String> importClassList = new ArrayList<>();
 
         if (javaCode.contains("List")) {
@@ -321,6 +323,25 @@ public class FileTransfer {
         }
         return importClassList;
     }
+
+    private static String parseCCode(String cCode) {
+        return cCode.replace("/**\n" +
+                " * Definition for a binary tree node.\n" +
+                " * struct TreeNode {\n" +
+                " *     int val;\n" +
+                " *     struct TreeNode *left;\n" +
+                " *     struct TreeNode *right;\n" +
+                " * };\n" +
+                " */", "");
+    }
+    private static List<String> parseCImport(String cCode) {
+        List<String> importClassList = new ArrayList<>();
+        if (cCode.contains("TreeNode")) {
+            importClassList.add("\"TreeNode.h\"");
+        }
+        return importClassList;
+    }
+
 
     private static String getTag(String x) {
         x = x.replaceAll(" ", "");

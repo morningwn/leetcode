@@ -5,6 +5,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+ <#list importClassList as importClass>
+#include ${importClass}
+</#list>
 
 ${cCode}
 

@@ -21,14 +21,18 @@ public class FileMaker {
 
     public static void makeJavaFile(Detail detail) {
         try {
+            File file = new File(baseDir + "java/" + detail.getPackageName().replaceAll("\\.", "/") + "/J" + detail.getFileSuffix() + ".java");
+            if (file.exists()) {
+                return;
+            }
+            if (!file.getParentFile().exists()) {
+                file.getParentFile().mkdirs();
+            }
             Configuration cfg = new Configuration(Configuration.VERSION_2_3_22);
             URL resource = FileTransfer.class.getClassLoader().getResource("");
             cfg.setDirectoryForTemplateLoading(new File(resource.getPath() + "/template"));
             Template template = cfg.getTemplate("Java.ftl");
-            File file = new File(baseDir + "java/" + detail.getPackageName().replaceAll("\\.", "/") + "/J" + detail.getFileSuffix() + ".java");
-            if (!file.getParentFile().exists()) {
-                file.getParentFile().mkdirs();
-            }
+
             FileWriter fileWriter = new FileWriter(file);
             template.process(detail, fileWriter);
         } catch (Exception e) {
@@ -39,10 +43,12 @@ public class FileMaker {
     public static void makeCFile(Detail detail) {
         try {
             File file = new File(baseDir + "c/" + detail.getFileDir().replaceAll("\\.", "/") + "/C" + detail.getFileSuffix() + ".c");
+            if (file.exists()) {
+                return;
+            }
             if (!file.getParentFile().exists()) {
                 file.getParentFile().mkdirs();
             }
-
             Configuration cfg = new Configuration(Configuration.VERSION_2_3_22);
             URL resource = FileTransfer.class.getClassLoader().getResource("");
             cfg.setDirectoryForTemplateLoading(new File(resource.getPath() + "/template"));
