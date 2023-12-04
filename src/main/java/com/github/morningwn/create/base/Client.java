@@ -1,5 +1,6 @@
 package com.github.morningwn.create.base;
 
+import cn.hutool.core.collection.CollUtil;
 import com.shuzijun.lc.LcClient;
 import com.shuzijun.lc.command.CommonCommand;
 import com.shuzijun.lc.command.CookieCommand;
@@ -10,7 +11,9 @@ import com.shuzijun.lc.http.HttpClient;
 import com.shuzijun.lc.model.*;
 import org.junit.Assert;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author morningwn
@@ -71,14 +74,17 @@ public class Client {
         return null;
     }
 
-    public static SubmissionDetail SubmissionDetailByTitleSlug(String titleSlug, String lang) {
+    public static Map<String, SubmissionDetail> SubmissionDetailByTitleSlug(String titleSlug) {
         try {
             List<Submission> submissions = getLcClient().invoker(SubmissionCommand.buildSubmissionList(titleSlug, 0, 10));
-            Submission submission = submissions.stream().filter(x -> x.getLang().equals(lang)).findFirst().orElse(null);
-            if (submission == null) {
-                return null;
+            if (CollUtil.isEmpty(submissions)) {
+                return new HashMap<>();
             }
-            return SubmissionDetail(submission.getId());
+            Map<String, SubmissionDetail> detailMap = new HashMap<>();
+            for (Submission submission : submissions) {
+                detailMap.put(submission.getLang(), SubmissionDetail(submission.getId()));
+            }
+            return detailMap;
         } catch (LcException e) {
             e.printStackTrace();
         }

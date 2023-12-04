@@ -22,6 +22,8 @@ public class Detail {
     public List<String> topics;
     private String difficulty;
     private List<String> importClassList;
+    private List<String> includeList;
+
     private String dataTime = DateUtil.formatDateTime(DateTime.now());
 
     public Integer getId() {
@@ -119,6 +121,14 @@ public class Detail {
 
     public void setImportClassList(List<String> importClassList) {
         this.importClassList = importClassList;
+    }
+
+    public List<String> getIncludeList() {
+        return includeList;
+    }
+
+    public void setIncludeList(List<String> includeList) {
+        this.includeList = includeList;
     }
 
     public String getDataTime() {
