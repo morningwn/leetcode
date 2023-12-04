@@ -18,5 +18,10 @@ public enum Topic {
     Queue,
     LinkedList,
     DataStream,
+    Matrix,
+    Tree,
+    DepthFirstSearch,
+    BinarySearchTree,
+    BinaryTree,
     ;
 }

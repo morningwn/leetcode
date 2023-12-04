@@ -327,7 +327,9 @@ public class FileTransfer {
         if (x.equals("Heap(PriorityQueue)")) {
             return "PriorityQueue";
         }
-
+        if (x.equals("Depth-FirstSearch")) {
+            return "DepthFirstSearch";
+        }
         return x;
     }
 

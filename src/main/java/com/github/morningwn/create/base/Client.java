@@ -71,6 +71,21 @@ public class Client {
         return null;
     }
 
+    public static SubmissionDetail SubmissionDetailByTitleSlug(String titleSlug, String lang) {
+        try {
+            List<Submission> submissions = getLcClient().invoker(SubmissionCommand.buildSubmissionList(titleSlug, 0, 10));
+            Submission submission = submissions.stream().filter(x -> x.getLang().equals(lang)).findFirst().orElse(null);
+            if (submission == null) {
+                return null;
+            }
+            return SubmissionDetail(submission.getId());
+        } catch (LcException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
     public static Question GetQuestion(String titleSlug) {
         try {
             Question question = getLcClient().invoker(QuestionCommand.buildGetQuestion(titleSlug));
