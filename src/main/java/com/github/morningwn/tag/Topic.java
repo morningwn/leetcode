@@ -33,5 +33,6 @@ public enum Topic {
     BreadthFirstSearch,
     HashFunction,
     Simulation,
+    Graph,
     ;
 }

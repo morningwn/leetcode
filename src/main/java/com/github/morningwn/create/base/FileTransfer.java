@@ -64,7 +64,7 @@ public class FileTransfer {
                     detail.setDataTime(DateUtil.formatDateTime(DateTime.of(Long.parseLong(submissionDetail.getTimestamp()) * 1000)));
                     javaCode = parsePassJavaCode(submissionDetail.getSubmissionCode());
                 } else {
-                    javaCode = codeSnippet.getCode();
+                    javaCode = parseJavaCode(codeSnippet.getCode());
                 }
                 detail.setImportClassList(parseJavaImport(javaCode));
                 detail.setJavaCode(javaCode);
