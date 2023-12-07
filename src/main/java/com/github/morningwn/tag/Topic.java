@@ -34,5 +34,6 @@ public enum Topic {
     HashFunction,
     Simulation,
     Graph,
+    TopologicalSort,
     ;
 }
