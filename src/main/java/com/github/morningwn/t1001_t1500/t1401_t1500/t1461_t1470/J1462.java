@@ -1,6 +1,8 @@
 package com.github.morningwn.t1001_t1500.t1401_t1500.t1461_t1470;
 
 import com.github.morningwn.prefab.Out;
+import com.github.morningwn.tag.Difficulty;
+import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -8,12 +10,19 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * <a href="https://leetcode.cn/problems/course-schedule-iv/description/">1462. 课程表 IV</a>
+ * <a href="https://leetcode.cn/problems/course-schedule-iv/">1462. 课程表 IV</a>
+ * <ul>
+ * <li>{@link Difficulty#Medium}</li>
+ * <li>{@link Topic#DepthFirstSearch}</li>
+ * <li>{@link Topic#BreadthFirstSearch}</li>
+ * <li>{@link Topic#Graph}</li>
+ * <li>{@link Topic#TopologicalSort}</li>
+ * </ul>
  *
  * @author morningwn
- * @date Created in 2023/9/12 20:55
+ * @date 2023-09-12 21:42:47
  */
-public class T1462 {
+public class J1462 {
 
     @Test
     public void test() {
