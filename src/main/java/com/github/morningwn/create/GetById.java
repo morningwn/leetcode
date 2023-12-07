@@ -19,7 +19,7 @@ public class GetById {
 
     public static void main(String[] args) {
         int id = 538;
-        getOne(1464);
+        getOne(1470);
 //        getList(531, 540);
     }
 
