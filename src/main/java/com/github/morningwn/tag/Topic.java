@@ -35,5 +35,6 @@ public enum Topic {
     Simulation,
     Graph,
     TopologicalSort,
+    PriorityQueue,
     ;
 }
