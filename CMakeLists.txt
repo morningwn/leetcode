@@ -12,16 +12,16 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY target/lib)
 # 可执行文件目录
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY target/bin)
 
-INCLUDE_DIRECTORIES(includes)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib/includes)
 
-file(GLOB C_Source_FILES src/main/c*/*.c)
-file(GLOB CPP_Source_FILES src/main/cpp/*.cpp)
+#file(GLOB C_Source_FILES src/main/c*/*.c)
+#file(GLOB CPP_Source_FILES src/main/cpp/*.cpp)
 
 function(BuildFile Source_Path)
     file(GLOB Source_FILES ${Source_Path})
 
     foreach(Source_FILE ${Source_FILES})
-        if(${Source_FILE} MATCHES "[.]c$")
+        if(${Source_FILE} MATCHES "[.]c")
             # 如果是文件，编译
             STRING(REGEX REPLACE ".+/(.+)\\..*" "\\1" FILE_NAME ${Source_FILE})
             message(${FILE_NAME})
