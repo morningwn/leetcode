@@ -18,8 +18,10 @@ public class FileMaker {
         if (detail == null) {
             return;
         }
+        System.out.println(detail.getId());
         makeJavaFile(detail);
         makeCFile(detail);
+        makeSwiftFile(detail);
     }
 
     public static void makeJavaFile(Detail detail) {
@@ -63,5 +65,19 @@ public class FileMaker {
             e.printStackTrace();
         }
 
+    }
+
+    public static void makeSwiftFile(Detail detail) {
+        try {
+            File file = new File(baseDir + "swift/" + detail.getFileDir().replaceAll("\\.", "/") + "/C" + detail.getFileSuffix() + ".c");
+            if (file.exists()) {
+                return;
+            }
+            if (!file.getParentFile().exists()) {
+                file.getParentFile().mkdirs();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
