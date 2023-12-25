@@ -69,7 +69,7 @@ public class FileMaker {
 
     public static void makeSwiftFile(Detail detail) {
         try {
-            File file = new File(baseDir + "swift/" + detail.getFileDir().replaceAll("\\.", "/") + "/C" + detail.getFileSuffix() + ".swift");
+            File file = new File(baseDir + "swift/" + detail.getFileDir().replaceAll("\\.", "/") + "/S" + detail.getFileSuffix() + ".swift");
             if (file.exists()) {
                 return;
             }
