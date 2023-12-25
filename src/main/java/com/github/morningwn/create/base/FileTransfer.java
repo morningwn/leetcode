@@ -26,7 +26,7 @@ public class FileTransfer {
     }
 
 
-    public static Detail getDetail(Question question,  Map<String, SubmissionDetail> submissionDetailMap) {
+    public static Detail getDetail(Question question, Map<String, SubmissionDetail> submissionDetailMap) {
         if (question == null || CollUtil.isEmpty(question.getCodeSnippets())) {
             return null;
         }
@@ -72,6 +72,9 @@ public class FileTransfer {
                 String cCode = parseCCode(codeSnippet.getCode());
                 detail.setIncludeList(parseCImport(cCode));
                 detail.setcCode(cCode);
+            } else if (langSlug.equals("swift")) {
+                String swiftCode = codeSnippet.getCode();
+                detail.setSwiftCode(swiftCode);
             }
         }
         return detail;
@@ -338,6 +341,7 @@ public class FileTransfer {
                 " * };\n" +
                 " */", "");
     }
+
     private static List<String> parseCImport(String cCode) {
         List<String> importClassList = new ArrayList<>();
         if (cCode.contains("TreeNode")) {

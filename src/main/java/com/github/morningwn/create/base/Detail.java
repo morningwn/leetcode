@@ -18,6 +18,7 @@ public class Detail {
     private String titleSlug;
     private String javaCode;
     private String cCode;
+    private String swiftCode;
     private String fileSuffix;
     public List<String> topics;
     private String difficulty;
@@ -80,6 +81,14 @@ public class Detail {
 
     public void setcCode(String cCode) {
         this.cCode = cCode;
+    }
+
+    public String getSwiftCode() {
+        return swiftCode;
+    }
+
+    public void setSwiftCode(String swiftCode) {
+        this.swiftCode = swiftCode;
     }
 
     public String getFileSuffix() {

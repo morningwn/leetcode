@@ -76,6 +76,13 @@ public class FileMaker {
             if (!file.getParentFile().exists()) {
                 file.getParentFile().mkdirs();
             }
+            Configuration cfg = new Configuration(Configuration.VERSION_2_3_22);
+            URL resource = FileTransfer.class.getClassLoader().getResource("");
+            cfg.setDirectoryForTemplateLoading(new File(resource.getPath() + "/template"));
+
+            Template template = cfg.getTemplate("Swift.ftl");
+            FileWriter fileWriter = new FileWriter(file);
+            template.process(detail, fileWriter);
         } catch (Exception e) {
             e.printStackTrace();
         }
