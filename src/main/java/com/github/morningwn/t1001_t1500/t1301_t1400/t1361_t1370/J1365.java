@@ -1,17 +1,27 @@
-package com.github.morningwn.t1001_t1500.t1301_t1400;
+package com.github.morningwn.t1001_t1500.t1301_t1400.t1361_t1370;
 
 import com.github.morningwn.prefab.Out;
+import com.github.morningwn.tag.Difficulty;
+import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.Arrays;
 
+
 /**
+ * <a href="https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/">1365. 有多少小于当前数字的数字</a>
+ * <ul>
+ * <li>{@link Difficulty#Easy}</li>
+ * <li>{@link Topic#Array}</li>
+ * <li>{@link Topic#HashTable}</li>
+ * <li>{@link Topic#Counting}</li>
+ * <li>{@link Topic#Sorting}</li>
+ * </ul>
+ *
  * @author morningwn
- * @description: 有多少小于当前数字的数字
- * @date Created in 2020/7/21 16:35
- * @version: 1.0
+ * @date 2020/7/21 16:35
  */
-public class T1365 {
+public class J1365 {
 
     @Test
     public void test() {
