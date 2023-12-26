@@ -74,7 +74,7 @@ public class FileTransfer {
                 detail.setcCode(cCode);
             } else if (langSlug.equals("swift")) {
                 String swiftCode = codeSnippet.getCode();
-                detail.setSwiftCode(swiftCode);
+                detail.setSwiftCode(parseSwiftCode(swiftCode));
             }
         }
         return detail;
@@ -363,6 +363,12 @@ public class FileTransfer {
             return "BreadthFirstSearch";
         }
         return x;
+    }
+
+    private static String parseSwiftCode(String swiftCode) {
+        String replace = swiftCode
+                .replace("class Solution {", "");
+        return replace.substring(0, replace.lastIndexOf("}"));
     }
 
 }

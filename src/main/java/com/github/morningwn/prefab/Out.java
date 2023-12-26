@@ -85,7 +85,11 @@ public class Out {
     public static void println(Object o) {
         System.out.println(JSONUtil.toJsonStr(o));
     }
-
+    public static void println(Object... os) {
+        for (Object o : os) {
+            System.out.println(JSONUtil.toJsonStr(o));
+        }
+    }
     public static void printf(String format, Object... args) {
         System.out.printf(format, args);
     }

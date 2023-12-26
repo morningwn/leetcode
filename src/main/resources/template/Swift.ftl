@@ -6,4 +6,8 @@
 
 import Foundation
 
+class S${fileSuffix} {
+
 ${swiftCode}
+
+}
