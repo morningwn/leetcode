@@ -1,9 +1,23 @@
-package com.github.morningwn.t1001_t1500.t1301_t1400;
+package com.github.morningwn.t1001_t1500.t1301_t1400.t1321_t1330;
 
 import com.github.morningwn.prefab.Out;
+import com.github.morningwn.tag.Difficulty;
+import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
-public class T1323 {
+
+/**
+ * <a href="https://leetcode.cn/problems/maximum-69-number/">1323. 6 和 9 组成的最大数字</a>
+ * <ul>
+ * <li>{@link Difficulty#Easy}</li>
+ * <li>{@link Topic#Greedy}</li>
+ * <li>{@link Topic#Math}</li>
+ * </ul>
+ *
+ * @author morningwn
+ * @date 2020.01.28 21:09
+ */
+public class J1323 {
 
     @Test
     public void test() {
