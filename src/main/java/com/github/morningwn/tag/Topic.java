@@ -37,5 +37,6 @@ public enum Topic {
     TopologicalSort,
     PriorityQueue,
     Greedy,
+    Counting,
     ;
 }
