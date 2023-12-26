@@ -1,14 +1,25 @@
-package com.github.morningwn.t1001_t1500.t1301_t1400;
+package com.github.morningwn.t1001_t1500.t1301_t1400.t1371_t1380;
 
 import com.github.morningwn.prefab.Out;
+import com.github.morningwn.tag.Difficulty;
+import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
-/**
- * @author morningwn
- * @date Created in 2020/5/20 19:42
- */
-public class T1371 {
 
+/**
+ * <a href="https://leetcode.cn/problems/find-the-longest-substring-containing-vowels-in-even-counts/">1371. 每个元音包含偶数次的最长子字符串</a>
+ * <ul>
+ * <li>{@link Difficulty#Medium}</li>
+ * <li>{@link Topic#BitManipulation}</li>
+ * <li>{@link Topic#HashTable}</li>
+ * <li>{@link Topic#String}</li>
+ * <li>{@link Topic#PrefixSum}</li>
+ * </ul>
+ *
+ * @author morningwn
+ * @date 2020/5/20 19:42
+ */
+public class J1371 {
 
     @Test
     public void test() {
