@@ -1,11 +1,24 @@
-package com.github.morningwn.t1001_t1500.t1301_t1400;
+package com.github.morningwn.t1001_t1500.t1301_t1400.t1311_t1320;
 
 import com.github.morningwn.prefab.Out;
+import com.github.morningwn.tag.Difficulty;
+import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
-public class T1313 {
+
+/**
+ * <a href="https://leetcode.cn/problems/decompress-run-length-encoded-list/">1313. 解压缩编码列表</a>
+ * <ul>
+ * <li>{@link Difficulty#Easy}</li>
+ * <li>{@link Topic#Array}</li>
+ * </ul>
+ *
+ * @author morningwn
+ * @date 2020.01.12 22:55
+ */
+public class J1313 {
 
     @Test
     public void test() {
