@@ -27,6 +27,7 @@
 		04321A512B301A180007ABD5 /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DDB91D2B3935090081A9B9 /* S0162.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S0162.swift; sourceTree = "<group>"; };
 		04DDB9222B3935AF0081A9B9 /* S1276.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S1276.swift; sourceTree = "<group>"; };
+		04E02DB92B3BC53B009AE733 /* t2501_t3000 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = t2501_t3000; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 		04DDB9172B39347D0081A9B9 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				04E02DB92B3BC53B009AE733 /* t2501_t3000 */,
 				04DDB91A2B3934C60081A9B9 /* t0001_t0500 */,
 				04DDB91F2B3935200081A9B9 /* t1001_t1500 */,
 			);
