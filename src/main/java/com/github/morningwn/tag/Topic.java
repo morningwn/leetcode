@@ -38,5 +38,6 @@ public enum Topic {
     PriorityQueue,
     Greedy,
     Counting,
+    Enumeration
     ;
 }
