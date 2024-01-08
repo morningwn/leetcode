@@ -1,18 +1,27 @@
 package com.github.morningwn.t0001_t0500.t0401_t0500.t0441_t0450;
 
 import com.github.morningwn.prefab.Out;
+import com.github.morningwn.tag.Difficulty;
+import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
 
+
 /**
  * <a href="https://leetcode.cn/problems/number-of-boomerangs/">447. 回旋镖的数量</a>
+ * <ul>
+ * <li>{@link Difficulty#Medium}</li>
+ * <li>{@link Topic#Array}</li>
+ * <li>{@link Topic#HashTable}</li>
+ * <li>{@link Topic#Math}</li>
+ * </ul>
  *
- * @author moringwn
+ * @author morningwn
  * @date 2021/9/13 上午11:27
  */
-public class T0447 {
+public class J0447 {
 
     @Test
     public void test() {
@@ -74,7 +83,6 @@ public class T0447 {
      * @return
      */
     private int getDistance(int[] x, int[] y) {
-
         return (int) (Math.pow(x[0] - y[0], 2) + Math.pow(x[1] - y[1], 2));
     }
 
