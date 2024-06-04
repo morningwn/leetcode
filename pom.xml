@@ -17,14 +17,6 @@
         <kotlin.version>1.9.20</kotlin.version>
     </properties>
     <dependencies>
-        <!--  git@github.com:shuzijun/lc-sdk.git -->
-        <dependency>
-            <groupId>com.shuzijun</groupId>
-            <artifactId>lc-sdk</artifactId>
-            <version>0.0.1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/lc-sdk-0.0.1.jar</systemPath>
-        </dependency>
         <dependency>
             <groupId>com.alibaba.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
