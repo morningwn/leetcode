@@ -1,4 +1,4 @@
-package com.github.morningwn.t3001_t3500.t3111_t3120;
+package com.github.morningwn.t3001_t3500.t3101_t3200.t3111_t3120;
 
 import org.junit.Assert;
 import org.junit.Test;
