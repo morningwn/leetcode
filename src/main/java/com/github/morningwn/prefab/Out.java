@@ -62,7 +62,9 @@ public class Out {
     public static void println(Map<?, ?> map) {
         System.out.println(JSONUtil.toJsonStr(map));
     }
-
+    public static void println(char o) {
+        System.out.println(o);
+    }
     public static void println(int o) {
         System.out.println(o);
     }
