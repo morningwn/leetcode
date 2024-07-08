@@ -29,9 +29,6 @@ public class J0724 {
             }
             leftSum += nums[i];
         }
-        if (leftSum == rightSum) {
-            return nums.length - 1;
-        }
         return -1;
     }
 }
