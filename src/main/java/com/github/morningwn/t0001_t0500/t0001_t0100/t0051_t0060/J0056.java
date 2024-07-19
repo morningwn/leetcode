@@ -7,12 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * <a href="https://leetcode.cn/problems/merge-intervals/">56. 合并区间</a>
+ *
  * @author morningwn
  * @description: 合并区间
  * @date Created in 2020/4/16 17:39
  * @version: 1.0
  */
-public class T0056 {
+public class J0056 {
 
     @Test
     public void test() {
