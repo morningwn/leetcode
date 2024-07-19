@@ -4,10 +4,12 @@ import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
+ * <a href="https://leetcode.cn/problems/jump-game/description/">55. 跳跃游戏</a>
+ *
  * @author morningwn
  * @date Created in 2020/4/17 1:15
  */
-public class T0055 {
+public class J0055 {
 
     @Test
     public void test() {
