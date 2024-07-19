@@ -5,10 +5,12 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 /**
+ * <a href="https://leetcode.cn/problems/n-queens-ii/">52. N 皇后 II</a>
+ * 
  * @author morningwn
  * @date
  */
-public class T0052 {
+public class J0052 {
 
     @Test
     public void test() {
