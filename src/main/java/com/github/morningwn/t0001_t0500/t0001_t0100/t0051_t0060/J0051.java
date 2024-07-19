@@ -8,10 +8,12 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * <a href="https://leetcode.cn/problems/n-queens/description/">51. N 皇后</a>
+ *
  * @author morningwn
  * @date 2020/9/3  10:20
  */
-public class T0051 {
+public class J0051 {
 
     private List<List<String>> res;
     private String board;
