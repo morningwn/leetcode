@@ -4,10 +4,12 @@ import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
+ * <a href="https://leetcode.cn/problems/maximum-subarray/">53. 最大子数组和</a>
+ * 
  * @author morningwn
  * @date Created in 2020/5/3 14:57
  */
-public class T0053 {
+public class J0053 {
 
     @Test
     public void test() {
