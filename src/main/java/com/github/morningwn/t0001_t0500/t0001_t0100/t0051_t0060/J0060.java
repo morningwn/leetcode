@@ -4,12 +4,12 @@ import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
- * 第k个排列
+ * <a href="https://leetcode.cn/problems/permutation-sequence/description/">60. 排列序列</a>
  *
  * @author morningwn
  * @date 2020/9/5  10:42
  */
-public class T0060 {
+public class J0060 {
 
     @Test
     public void test() {
