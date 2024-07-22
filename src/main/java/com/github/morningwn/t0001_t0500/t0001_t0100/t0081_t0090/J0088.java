@@ -8,7 +8,7 @@ import org.junit.Test;
  * @author morningwn
  * @date Created in 2020/7/19 17:52
  */
-public class T0088 {
+public class J0088 {
 
     @Test
     public void test() {
