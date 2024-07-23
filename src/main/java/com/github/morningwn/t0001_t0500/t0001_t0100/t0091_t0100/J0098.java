@@ -7,10 +7,12 @@ import org.junit.Test;
 import java.util.Stack;
 
 /**
+ * <a href="https://leetcode.cn/problems/validate-binary-search-tree/">98. 验证二叉搜索树</a>
+ *
  * @author morningwn
  * @date Created in 2020/5/5 16:50
  */
-public class T0098 {
+public class J0098 {
 
     @Test
     public void test() {
