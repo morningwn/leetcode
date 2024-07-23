@@ -4,11 +4,12 @@ import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
- * <a href="https://leetcode.cn/problems/decode-ways/"></a>
+ * <a href="https://leetcode.cn/problems/decode-ways/">91. 解码方法</a>
+ *
  * @author morningwn
  * @create in 2023/2/7 20:54
  */
-public class T0091 {
+public class J0091 {
 
     @Test
     public void test() {
@@ -27,7 +28,7 @@ public class T0091 {
             }
             if (i >= 1) {
                 char pre = s.charAt(i - 1);
-                if (pre != '0' && ((pre - '0') * 10 + (cur -'0')) <= 26) {
+                if (pre != '0' && ((pre - '0') * 10 + (cur - '0')) <= 26) {
                     counts[i + 2] += counts[i];
                 }
             }
