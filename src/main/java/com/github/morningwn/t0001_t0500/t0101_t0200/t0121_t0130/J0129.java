@@ -5,13 +5,12 @@ import com.github.morningwn.prefab.TreeNode;
 import org.junit.Test;
 
 /**
- * 求根到叶子节点数字之和
+ * <a href="https://leetcode.cn/problems/sum-root-to-leaf-numbers/">129. 求根节点到叶节点数字之和</a>
  *
  * @author morningwn
- * @version 1.0
  * @date Created in 2020/8/14 22:26
  */
-public class T0129 {
+public class J0129 {
 
     @Test
     public void test() {
