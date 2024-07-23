@@ -8,10 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * <a href="https://leetcode.cn/problems/unique-binary-search-trees-ii/description/">95. 不同的二叉搜索树 II</a>
+ *
  * @author morningwn
  * @date Created in 2020/7/21 15:33
  */
-public class T0095 {
+public class J0095 {
 
     @Test
     public void test() {
