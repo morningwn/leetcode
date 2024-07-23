@@ -3,7 +3,13 @@ package com.github.morningwn.t0001_t0500.t0101_t0200.t0121_t0130;
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
-public class T0122 {
+/**
+ * <a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/">122. 买卖股票的最佳时机 II</a>
+ *
+ * @author morningwn
+ * @date Created in 2020.03.23
+ */
+public class J0122 {
 
     @Test
     public void test() {
