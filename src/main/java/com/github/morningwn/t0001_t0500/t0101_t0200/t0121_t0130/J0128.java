@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * <a href="https://leetcode.cn/problems/longest-consecutive-sequence/">128. 最长连续序列</a>
+ *
  * @author morningwn
- * @description: 最长连续序列
  * @date Created in 2020/6/6 10:11
- * @version: 1.0
  */
-public class T0128 {
+public class J0128 {
     @Test
     public void test() {
 //        int[] nums = {-1, 1, 0};
