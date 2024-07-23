@@ -4,9 +4,12 @@ import com.github.morningwn.prefab.TreeNode;
 
 /**
  * <a href="https://leetcode.cn/problems/same-tree/">100. 相同的树</a>
+ *
+ * @author morningwn
+ * @date Created in 2024/7/23 17:26
  */
 public class J0100 {
-    
+
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;
