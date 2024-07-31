@@ -10,7 +10,7 @@ import java.util.Comparator;
  * <a href="https://leetcode.cn/problems/minimum-rectangles-to-cover-points/">3111. 覆盖所有点的最少矩形数目</a>
  *
  * @author morningwn
- * @date 2024-07-18 17:48:24
+ * @date 2024-07-31 14:48:24
  */
 public class J3111 {
 
