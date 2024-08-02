@@ -1,7 +1,10 @@
 package com.github.morningwn.prefab;
 
+import cn.hutool.core.io.FileUtil;
 import cn.hutool.json.JSONUtil;
 
+import java.io.File;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Map;
 
@@ -62,9 +65,11 @@ public class Out {
     public static void println(Map<?, ?> map) {
         System.out.println(JSONUtil.toJsonStr(map));
     }
+
     public static void println(char o) {
         System.out.println(o);
     }
+
     public static void println(int o) {
         System.out.println(o);
     }
@@ -80,6 +85,7 @@ public class Out {
     public static void println(double d) {
         System.out.println(d);
     }
+
     public static void println(int[] o) {
         System.out.println(JSONUtil.toJsonStr(o));
     }
@@ -87,11 +93,13 @@ public class Out {
     public static void println(Object o) {
         System.out.println(JSONUtil.toJsonStr(o));
     }
+
     public static void println(Object... os) {
         for (Object o : os) {
             System.out.println(JSONUtil.toJsonStr(o));
         }
     }
+
     public static void printf(String format, Object... args) {
         System.out.printf(format, args);
     }
@@ -99,5 +107,10 @@ public class Out {
     public static void printlnf(String format, Object... args) {
         System.out.printf(format, args);
         System.out.println();
+    }
+
+    public static void toFile(String path, Object args) {
+        File file = new File(path);
+        FileUtil.writeString(JSONUtil.toJsonStr(args), file, StandardCharsets.UTF_8);
     }
 }
