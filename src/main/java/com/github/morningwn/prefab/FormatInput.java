@@ -15,7 +15,7 @@ public class FormatInput {
 
     public static String readStr(String filePath) {
         File file = new File(filePath);
-        try (FileReader fileReader = new FileReader(file, StandardCharsets.UTF_8)){
+        try (FileReader fileReader = new FileReader(file, StandardCharsets.UTF_8)) {
             int len = 0;
             char[] bff = new char[1024];
             StringBuilder sb = new StringBuilder();
@@ -98,5 +98,22 @@ public class FormatInput {
         }
 
         return root;
+    }
+
+
+    public static ListNode buildNodeList(int... ints) {
+        ListNode header = null;
+        ListNode node = null;
+        for (int anInt : ints) {
+            if (node != null) {
+                node.next = new ListNode(anInt);
+                node = node.next;
+            } else {
+                node = new ListNode(anInt);
+                header = node;
+            }
+        }
+
+        return header;
     }
 }
