@@ -4,12 +4,12 @@ import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
+ * <a hre="https://leetcode.cn/problems/min-cost-climbing-stairs/">746. 使用最小花费爬楼梯</a>
+ *
  * @author morningwn
- * @description: 使用最小花费爬楼梯
  * @date Created in 2020/5/24 17:46
- * @version: 1.0
  */
-public class T0746 {
+public class J0746 {
 
     @Test
     public void test() {
