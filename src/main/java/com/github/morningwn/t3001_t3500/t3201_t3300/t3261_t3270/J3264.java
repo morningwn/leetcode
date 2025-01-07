@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
- * <a>https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/description</a>
+ * <a href="https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-i/description">3264. K 次乘运算后的最终数组 I</a>
  *
  * @author morningwn
  * @date 2024-12-13 11:15:24
