@@ -1,15 +1,15 @@
-package com.github.morningwn.t3001_t3500.t3101_t3200.t3101_t3110;
+package com.github.morningwn.t3001_t3500.t3001_t3100.t3011_t3020;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * <a href="https://leetcode.cn/problems/number-of-changing-keys"></a>
+ * <a href="https://leetcode.cn/problems/number-of-changing-keys">3019. 按键变更的次数</a>
  *
  * @author morningwn
  * @date 2025-01-07 15:49:24
  */
-public class J3109 {
+public class J3019 {
 
     @Test
     public void test() {
