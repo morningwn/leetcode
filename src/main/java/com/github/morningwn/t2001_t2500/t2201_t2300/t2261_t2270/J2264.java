@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.Objects;
 
 /**
- * <a href="https://leetcode.cn/problems/largest-3-same-digit-number-in-string"></a>
+ * <a href="https://leetcode.cn/problems/largest-3-same-digit-number-in-string">2264. 字符串中最大的 3 位相同数字</a>
  *
  * @author morningwn
  * @date 2025/01/08 10:52
