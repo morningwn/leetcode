@@ -7,13 +7,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 397. 整数替换
- * <link>https://leetcode-cn.com/problems/integer-replacement/</link>
+ * <a href="https://leetcode-cn.com/problems/integer-replacement/">397. 整数替换</a>
  *
  * @author morningwn
  * @date Created in 2021/11/19 11:08
  */
-public class T0397 {
+public class J0397 {
 
     @Test
     public void test() {
