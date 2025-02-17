@@ -14,7 +14,7 @@ import java.util.Map;
  * @author morningwn
  * @create in 2022/8/12 9:47
  */
-public class T1282 {
+public class J1282 {
 
     @Test
     public void test() {
