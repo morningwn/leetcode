@@ -10,7 +10,7 @@ import org.junit.Test;
  * @author moringwn
  * @date
  */
-public class T1290 {
+public class J1290 {
 
     @Test
     public void test() {
