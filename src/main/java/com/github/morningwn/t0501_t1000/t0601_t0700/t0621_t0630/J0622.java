@@ -6,7 +6,7 @@ package com.github.morningwn.t0501_t1000.t0601_t0700.t0621_t0630;
  * @author morningwn
  * @create in 2022/8/2 17:21
  */
-public class T0622 {
+public class J0622 {
 
     class MyCircularQueue {
         private final int length;
