@@ -11,7 +11,7 @@ import java.util.LinkedList;
  * @author morningwn
  * @create in 2022/8/5 9:24
  */
-public class T0623 {
+public class J0623 {
 
     public TreeNode addOneRow(TreeNode root, int val, int depth) {
         if (depth == 1) {
