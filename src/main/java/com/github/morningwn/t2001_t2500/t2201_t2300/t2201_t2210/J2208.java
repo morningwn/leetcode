@@ -11,7 +11,7 @@ import java.util.*;
  * @author morningwn
  * @create in 2023/1/31 23:35
  */
-public class T2208 {
+public class J2208 {
 
     @Test
     public void test() {
