@@ -6,7 +6,7 @@ package com.github.morningwn.t1001_t1500.t1401_t1500.t1451_t1460;
  * @author morningwn
  * @create in 2022/8/4 16:31
  */
-public class T1455 {
+public class J1455 {
 
     public int isPrefixOfWord(String sentence, String searchWord) {
         char[] letters = sentence.toCharArray();
