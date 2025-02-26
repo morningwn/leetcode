@@ -12,7 +12,7 @@ import java.util.Set;
  * @author morningwn
  * @create in 2022/8/4 17:07
  */
-public class T1496 {
+public class J1496 {
 
     @Test
     public void test() {
