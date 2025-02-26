@@ -12,7 +12,7 @@ import java.util.Map;
  * @author morningwn
  * @date Created in 2023/3/3 10:33
  */
-public class T1487 {
+public class J1487 {
 
     @Test
     public void test() {
