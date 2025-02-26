@@ -10,7 +10,7 @@ import java.util.List;
  * @author morningwn
  * @create in 2022/8/4 15:36
  */
-public class T1403 {
+public class J1403 {
 
     public List<Integer> minSubsequence(int[] nums) {
         Arrays.sort(nums);
