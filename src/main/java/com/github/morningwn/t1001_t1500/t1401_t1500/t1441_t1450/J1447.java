@@ -12,7 +12,7 @@ import java.util.List;
  * @author morningwn
  * @date 2022-02-10 11:08:53
  */
-public class T1447 {
+public class J1447 {
 
     @Test
     public void test() {
