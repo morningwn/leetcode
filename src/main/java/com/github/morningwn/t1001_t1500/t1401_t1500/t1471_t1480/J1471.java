@@ -10,7 +10,7 @@ import java.util.Arrays;
  * @author morningwn
  * @create in 2023/1/29 22:15
  */
-public class T1471 {
+public class J1471 {
 
     @Test
     public void test() {
