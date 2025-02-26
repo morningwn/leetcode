@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * <a href="https://leetcode.cn/problems/kids-with-the-greatest-number-of-candies/">1431. 拥有最多糖果的孩子</a>
+ *
  * @author morningwn
- * @description: 拥有最多糖果的孩子
  * @date Created in 2020/6/1 10:18
- * @version: 1.0
  */
-public class T1431 {
+public class J1431 {
 
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int maxCandy = 0;
