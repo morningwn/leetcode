@@ -6,7 +6,7 @@ package com.github.morningwn.t1001_t1500.t1401_t1500.t1441_t1450;
  * @author morningwn
  * @create in 2022/8/19 9:36
  */
-public class T1450 {
+public class J1450 {
 
     public int busyStudent(int[] startTime, int[] endTime, int queryTime) {
         int count = 0;
