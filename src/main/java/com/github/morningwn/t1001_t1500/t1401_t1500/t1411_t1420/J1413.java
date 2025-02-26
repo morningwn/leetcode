@@ -6,7 +6,7 @@ package com.github.morningwn.t1001_t1500.t1401_t1500.t1411_t1420;
  * @author morningwn
  * @create in 2022/8/4 15:56
  */
-public class T1413 {
+public class J1413 {
 
     public int minStartValue(int[] nums) {
         int minPrefix = Integer.MAX_VALUE;
