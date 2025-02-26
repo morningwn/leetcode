@@ -6,7 +6,7 @@ package com.github.morningwn.t1001_t1500.t1401_t1500.t1451_t1460;
  * @author morningwn
  * @create in 2022/8/24 15:42
  */
-public class T1460 {
+public class J1460 {
 
     public boolean canBeEqual(int[] target, int[] arr) {
         int[] counts = new int[1001];
