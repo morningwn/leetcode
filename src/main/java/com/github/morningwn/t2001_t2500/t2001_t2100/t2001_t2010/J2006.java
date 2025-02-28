@@ -6,7 +6,7 @@ package com.github.morningwn.t2001_t2500.t2001_t2100.t2001_t2010;
  * @author morningwn
  * @date 2022-02-09 10:19:12
  */
-public class T2006 {
+public class J2006 {
 
     public int countKDifference(int[] nums, int k) {
         int[] count = new int[101];
