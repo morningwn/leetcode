@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author morningwn
  * @create in 2023/2/11 23:29
  */
-public class T2335 {
+public class J2335 {
 
     public int fillCups(int[] amount) {
         Arrays.sort(amount);
