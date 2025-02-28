@@ -6,7 +6,7 @@ package com.github.morningwn.t2001_t2500.t2301_t2400.t2311_t2320;
  * @author morningwn
  * @create in 2023/1/29 21:41
  */
-public class T2315 {
+public class J2315 {
 
     public int countAsterisks(String s) {
         int count = 0;
