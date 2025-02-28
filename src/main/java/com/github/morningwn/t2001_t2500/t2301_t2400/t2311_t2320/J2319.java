@@ -6,7 +6,7 @@ package com.github.morningwn.t2001_t2500.t2301_t2400.t2311_t2320;
  * @author morningwn
  * @create in 2023/1/31 0:21
  */
-public class T2319 {
+public class J2319 {
 
     public boolean checkXMatrix(int[][] grid) {
         int m = grid.length;
