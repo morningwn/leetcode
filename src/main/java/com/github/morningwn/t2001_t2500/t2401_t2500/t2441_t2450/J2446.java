@@ -9,7 +9,7 @@ import org.junit.Test;
  * @author morningwn
  * @create in 2023/5/17 11:38
  */
-public class T2446 {
+public class J2446 {
 
     @Test
     public void test() {
