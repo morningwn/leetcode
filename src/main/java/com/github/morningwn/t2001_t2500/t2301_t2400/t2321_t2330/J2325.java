@@ -9,7 +9,7 @@ import java.util.Map;
  * @author morningwn
  * @create in 2023/2/1 0:43
  */
-public class T2325 {
+public class J2325 {
 
     public String decodeMessage(String key, String message) {
         Map<Character, Character> dictionary = new HashMap<>();
