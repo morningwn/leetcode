@@ -10,7 +10,7 @@ import org.junit.Test;
  * @author morningwn
  * @date Created in 2023/3/1 16:35
  */
-public class T2373 {
+public class J2373 {
 
     @Test
     public void test() {
