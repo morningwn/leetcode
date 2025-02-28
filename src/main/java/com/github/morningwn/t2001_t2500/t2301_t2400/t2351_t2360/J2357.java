@@ -9,7 +9,7 @@ import java.util.Set;
  * @author morningwn
  * @create in 2023/2/24 14:27
  */
-public class T2357 {
+public class J2357 {
 
     public int minimumOperations(int[] nums) {
         Set<Integer> set = new HashSet<>();
