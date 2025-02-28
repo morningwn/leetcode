@@ -8,7 +8,7 @@ import com.github.morningwn.prefab.TreeNode;
  * @author morningwn
  * @create in 2023/2/6 10:13
  */
-public class T2331 {
+public class J2331 {
 
     public boolean evaluateTree(TreeNode root) {
         // 规则内，输入数据不可能为null
