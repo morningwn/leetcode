@@ -6,7 +6,7 @@ package com.github.morningwn.t2001_t2500.t2301_t2400.t2351_t2360;
  * @author morningwn
  * @create in 2023/1/1 11:09
  */
-public class T2351 {
+public class J2351 {
 
     public char repeatedCharacter(String s) {
         boolean[] flags = new boolean[27];
