@@ -8,7 +8,7 @@ import com.github.morningwn.prefab.ListNode;
  * @author morningwn
  * @create in 2023/1/30 23:51
  */
-public class T1669 {
+public class J1669 {
 
     public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
         ListNode head = list1;
