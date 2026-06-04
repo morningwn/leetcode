@@ -1,15 +1,15 @@
-package com.github.morningwn.t2501_.t6301_t6400.t6311_t6320;
+package com.github.morningwn.t2501_t3000.t2501_t2600.t2571_t2580;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <a href="https://leetcode.cn/problems/split-with-minimum-sum/">6312. 最小和分割</a>
+ * <a href="https://leetcode.cn/problems/split-with-minimum-sum/">2578. 最小和分割</a>
  *
  * @author morningwn
  * @date Created in 2023/3/4 22:36
  */
-public class T6312 {
+public class J2578 {
 
     public int splitNum(int num) {
         List<Integer> nums = new ArrayList<>();
