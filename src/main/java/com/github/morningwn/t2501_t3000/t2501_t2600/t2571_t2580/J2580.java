@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t6301_t6400.t6311_t6320;
+package com.github.morningwn.t2501_t3000.t2501_t2600.t2571_t2580;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
@@ -6,12 +6,12 @@ import org.junit.Test;
 import java.util.*;
 
 /**
- * <a href="https://leetcode.cn/problems/count-ways-to-group-overlapping-ranges/">6313. 统计将重叠区间合并成组的方案数</a>
+ * <a href="https://leetcode.cn/problems/count-ways-to-group-overlapping-ranges/">2580. 统计将重叠区间合并成组的方案数</a>
  *
  * @author morningwn
  * @date Created in 2023/3/4 23:09
  */
-public class T6313 {
+public class J2580 {
 
     @Test
     public void test() {
