@@ -1,15 +1,15 @@
-package com.github.morningwn.t2501_.t6301_t6400.t6311_t6320;
+package com.github.morningwn.t2501_t3000.t2501_t2600.t2571_t2580;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
- * <a href="https://leetcode.cn/problems/count-total-number-of-colored-cells/">6311. 统计染色格子数</a>
+ * <a href="https://leetcode.cn/problems/count-total-number-of-colored-cells/">2579. 统计染色格子数</a>
  *
  * @author morningwn
  * @date Created in 2023/3/4 22:46
  */
-public class T6311 {
+public class J2579 {
 
     @Test
     public void test() {
