@@ -1,27 +1,24 @@
 package com.github.morningwn.t1001_t1500.t1101_t1200.t1181_t1190;
 
-import com.github.morningwn.prefab.Out;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
  * <a href="https://leetcode.cn/problems/maximum-number-of-balloons/">1189. “气球” 的最大数量</a>
  *
  * @author morningwn
- * @date
+ * @date 2020.03.24 22:01
  */
-public class T1189 {
+public class J1189 {
 
     @Test
     public void test() {
-
-        Out.println(maxNumberOfBalloons("nlaebolkoo"));        //1
-        Out.println(maxNumberOfBalloons("loonbalxballpoon"));        //2
-        Out.println(maxNumberOfBalloons("leetcode"));        //0
-        Out.println(maxNumberOfBalloons(""));        //0
-
+        Assert.assertEquals(1, maxNumberOfBalloons("nlaebolko"));
+        Assert.assertEquals(2, maxNumberOfBalloons("loonbalxballpoon"));
+        Assert.assertEquals(0, maxNumberOfBalloons("leetcode"));
+        Assert.assertEquals(0, maxNumberOfBalloons(""));
     }
 
-    //balloon
     public int maxNumberOfBalloons(String text) {
 
         float[] letters = new float[5];
