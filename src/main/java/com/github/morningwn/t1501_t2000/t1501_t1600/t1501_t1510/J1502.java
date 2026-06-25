@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t5401_t5500.t5451_t5460;
+package com.github.morningwn.t1501_t2000.t1501_t1600.t1501_t1510;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
@@ -6,10 +6,12 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
+ * <a href="https://leetcode.cn/problems/can-make-arithmetic-progression-from-sequence/">1502. 判断能否形成等差数列</a>
+ *
  * @author morningwn
  * @date Created in 2020/7/5 10:32
  */
-public class T5452 {
+public class J1502 {
 
     @Test
     public void test() {
