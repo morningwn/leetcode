@@ -1,13 +1,15 @@
-package com.github.morningwn.t2501_.t5401_t5500.t5491_t5500;
+package com.github.morningwn.t1501_t2000.t1501_t1600.t1561_t1570;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
+ * <a href="https://leetcode.cn/problems/detect-pattern-of-length-m-repeated-k-or-more-times/">1566. 重复至少 K 次且长度为 M 的模式</a>
+ *
  * @author morningwn
  * @date 2020/8/30  10:33
  */
-public class T5499 {
+public class J1566 {
 
     @Test
     public void test() {
