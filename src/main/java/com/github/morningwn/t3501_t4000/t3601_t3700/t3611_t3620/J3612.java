@@ -1,4 +1,4 @@
-package com.github.morningwn.t3001_t3500.t3601_t3700.t3611_t3620;
+package com.github.morningwn.t3501_t4000.t3601_t3700.t3611_t3620;
 
 /**
  * <a href="https://leetcode.cn/problems/process-string-with-special-operations-i">3612. 用特殊操作处理字符串 I</a>
