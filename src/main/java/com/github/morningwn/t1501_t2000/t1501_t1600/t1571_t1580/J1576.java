@@ -1,12 +1,12 @@
-package com.github.morningwn.t2501_.t5501_t5600.t5501_t5510;
+package com.github.morningwn.t1501_t2000.t1501_t1600.t1571_t1580;
 
 /**
- * 替换所有的问号
+ * <a href="https://leetcode.cn/problems/replace-all-s-to-avoid-consecutive-repeating-characters/">1576. 替换所有的问号</a>
  *
  * @author morningwn
  * @date 2020/9/6  10:31
  */
-public class T5507 {
+public class J1576 {
 
     public String modifyString(String s) {
         char[] chars = s.toCharArray();
