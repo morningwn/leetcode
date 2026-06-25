@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author morningwn
  * @date Created in 2023/3/3 22:24
  */
-public class T1508 {
+public class J1508 {
 
     @Test
     public void test() {
