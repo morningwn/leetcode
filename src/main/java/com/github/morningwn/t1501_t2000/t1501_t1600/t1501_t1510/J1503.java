@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t5401_t5500.t5451_t5460;
+package com.github.morningwn.t1501_t2000.t1501_t1600.t1501_t1510;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
@@ -6,12 +6,12 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
+ * <a href="https://leetcode.cn/problems/last-moment-before-all-ants-fall-out-of-a-plank/">1503. 所有蚂蚁掉下来前的最后一刻</a>
+ *
  * @author morningwn
- * @description: 所有蚂蚁掉下来前的最后一刻
  * @date Created in 2020/7/5 10:35
- * @version: 1.0
  */
-public class T5453 {
+public class J1503 {
 
     @Test
     public void test() {
