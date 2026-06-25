@@ -50,7 +50,7 @@ public class J3737 {
                 if (nums[j] == target) {
                     targetNumCount++;
                 }
-                if (targetNumCount > (j - i + 1) / 2 && targetNumCount * 2 != j - i + 1) {
+                if (targetNumCount * 2 > j - i + 1) {
                     arrays++;
                 }
             }
