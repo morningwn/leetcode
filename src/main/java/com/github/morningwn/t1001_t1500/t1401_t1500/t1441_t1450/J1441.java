@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t5401_t5500.t5401_t5410;
+package com.github.morningwn.t1001_t1500.t1401_t1500.t1441_t1450;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
@@ -7,10 +7,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * <a href="https://leetcode.cn/problems/build-an-array-with-stack-operations/'>1441. 用栈操作构建数组</a>
+ *
  * @author morningwn
  * @date Created in 2020/5/10 10:41
  */
-public class T5404 {
+public class J1441 {
 
     @Test
     public void test() {
@@ -29,7 +31,6 @@ public class T5404 {
                 res.add("Pop");
             }
             res.add("Push");
-//            count++;
         }
         return res;
     }
