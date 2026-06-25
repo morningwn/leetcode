@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t5401_t5500.t5401_t5410;
+package com.github.morningwn.t1001_t1500.t1401_t1500.t1441_t1450;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
@@ -6,12 +6,12 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
+ * <a href="https://leetcode.cn/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/">1442. 形成两个异或相等数组的三元组数目</a>
+ *
  * @author morningwn
- * @description: 形成两个异或相等数组的三元组数目
  * @date Created in 2020/5/10 10:49
- * @version: 1.0
  */
-public class T5405 {
+public class J1442 {
     @Test
     public void test() {
 //        int[] arr = {2,3,1,6,7};//4
@@ -27,7 +27,6 @@ public class T5405 {
         for (int i = 2; i <= arr.length; i++) {
             for (int j = 0; j <= arr.length - i; j++) {
                 res += getOne(Arrays.copyOfRange(arr, j, i + j));
-//                Out.println( "res:" + res + "\t from:" + j + "\t to:"+ (i+j) + "\t len:" + i);
             }
         }
 
@@ -53,7 +52,6 @@ public class T5405 {
             }
         }
 
-//        Out.println( "res:" + res);
         return res;
     }
 }
