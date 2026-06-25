@@ -1,13 +1,15 @@
-package com.github.morningwn.t2501_.t5401_t5500.t5451_t5460;
+package com.github.morningwn.t1501_t2000.t1501_t1600.t1501_t1510;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
+ * <a href="https://leetcode.cn/problems/count-submatrices-with-all-ones/">1504. 统计全 1 子矩形</a>
+ *
  * @author morningwn
  * @date Created in 2020/7/5 11:07
  */
-public class T5454 {
+public class J1504 {
 
     private int rows;
     private int columns;
@@ -15,9 +17,11 @@ public class T5454 {
     @Test
     public void test() {
 
-        int[][] mat = {{1, 0, 1},
+        int[][] mat = {
+                {1, 0, 1},
                 {1, 1, 0},
-                {1, 1, 0}};
+                {1, 1, 0}
+        };
 
         Out.println(numSubmat(mat));
     }
@@ -37,7 +41,6 @@ public class T5454 {
                         } else {
                             break;
                         }
-                        //Out.println(res + "\t " + i + "\t " + j + "\t m:" + m + "\t n:" + n);
                     }
                 }
             }
