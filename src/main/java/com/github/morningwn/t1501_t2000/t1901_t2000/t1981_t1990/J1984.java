@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author morningwn
  * @date 2022-02-11 10:39:09
  */
-public class T1984 {
+public class J1984 {
 
 
     public int minimumDifference(int[] nums, int k) {
