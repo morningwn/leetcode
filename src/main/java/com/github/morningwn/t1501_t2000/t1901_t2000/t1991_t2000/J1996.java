@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author morningwn
  * @date 2022/01/28 下午3:26
  */
-public class T1996 {
+public class J1996 {
 
     @Test
     public void test() {
