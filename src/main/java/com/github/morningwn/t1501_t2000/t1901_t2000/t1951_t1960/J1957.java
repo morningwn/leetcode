@@ -6,7 +6,7 @@ package com.github.morningwn.t1501_t2000.t1901_t2000.t1951_t1960;
  * @author morningwn
  * @date Created in 2023/3/5 19:55
  */
-public class T1957 {
+public class J1957 {
     public String makeFancyString(String s) {
         StringBuilder sb = new StringBuilder();
         int flag = 0;
