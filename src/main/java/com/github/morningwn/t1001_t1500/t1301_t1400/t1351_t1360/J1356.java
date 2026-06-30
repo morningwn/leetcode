@@ -12,13 +12,6 @@ import java.util.List;
 
 /**
  * <a href="https://leetcode.cn/problems/sort-integers-by-the-number-of-1-bits/">1356. 根据数字二进制下 1 的数目排序</a>
- * <ul>
- * <li>{@link Difficulty#Easy}</li>
- * <li>{@link Topic#BitManipulation}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#Counting}</li>
- * <li>{@link Topic#Sorting}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2020/11/6 19:14
