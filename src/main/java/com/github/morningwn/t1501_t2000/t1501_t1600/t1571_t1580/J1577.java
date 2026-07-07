@@ -4,7 +4,7 @@ import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
- * <a href="https://leetcode.cn/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/description/"></a>
+ * <a href="https://leetcode.cn/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/">1577. 数的平方等于两数乘积的方法数</a>
  *
  * @author morningwn
  * @date 2020/9/6  10:41
