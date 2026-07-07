@@ -1,15 +1,15 @@
-package com.github.morningwn.t2501_.t5901_t6000.t5901_t5910;
+package com.github.morningwn.t2001_t2500.t2001_t2100.t2041_t2050;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
- * 5907. 下一个更大的数值平衡数
+ * <a href="https://leetcode.cn/problems/next-greater-numerically-balanced-number/">2048. 下一个更大的数值平衡数</a>
  *
  * @author morningwn
  * @date Created in 2021/10/24 11:15
  */
-public class T5907 {
+public class J2048 {
 
     @Test
     public void test() {
