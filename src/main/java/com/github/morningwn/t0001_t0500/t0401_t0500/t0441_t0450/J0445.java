@@ -11,12 +11,6 @@ import java.util.List;
 
 /**
  * <a href="https://leetcode.cn/problems/add-two-numbers-ii/">445. 两数相加 II</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#Stack}</li>
- * <li>{@link Topic#LinkedList}</li>
- * <li>{@link Topic#Math}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2020/4/14 10:43
