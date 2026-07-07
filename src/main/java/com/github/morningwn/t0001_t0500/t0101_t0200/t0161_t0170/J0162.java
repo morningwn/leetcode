@@ -8,11 +8,6 @@ import org.junit.Test;
 
 /**
  * <a href="https://leetcode.cn/problems/find-peak-element/">162. 寻找峰值</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#BinarySearch}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2021/9/15 上午9:29
