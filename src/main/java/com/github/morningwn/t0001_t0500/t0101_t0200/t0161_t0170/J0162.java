@@ -1,8 +1,6 @@
 package com.github.morningwn.t0001_t0500.t0101_t0200.t0161_t0170;
 
 import com.github.morningwn.prefab.Out;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 
