@@ -1,4 +1,4 @@
-package com.github.morningwn.t2501_.t5501_t5600.t5501_t5510;
+package com.github.morningwn.t1501_t2000.t1501_t1600.t1571_t1580;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
@@ -6,18 +6,15 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
+ * <a href="https://leetcode.cn/problems/minimum-time-to-make-rope-colorful/">1578. 使绳子变成彩色的最短时间</a>
+ *
  * @author morningwn
  * @date 2020/9/6  11:02
  */
-public class T5509 {
+public class J1578 {
 
     @Test
     public void test() {
-
-        //23
-//        "bbbaaa"
-//                [4,9,3,8,8,9]
-
         String s = "bbbaaa";
         int[] cost = {4, 9, 3, 8, 8, 9};
 
