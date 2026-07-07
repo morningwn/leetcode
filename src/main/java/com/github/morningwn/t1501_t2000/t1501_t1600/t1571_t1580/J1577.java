@@ -1,13 +1,15 @@
-package com.github.morningwn.t2501_.t5501_t5600.t5501_t5510;
+package com.github.morningwn.t1501_t2000.t1501_t1600.t1571_t1580;
 
 import com.github.morningwn.prefab.Out;
 import org.junit.Test;
 
 /**
+ * <a href="https://leetcode.cn/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/description/"></a>
+ *
  * @author morningwn
  * @date 2020/9/6  10:41
  */
-public class T5508 {
+public class J1577 {
 
     @Test
     public void test() {
