@@ -1,18 +1,10 @@
 package com.github.morningwn.t1001_t1500.t1301_t1400.t1301_t1310;
 
 import com.github.morningwn.prefab.Out;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
-
 
 /**
  * <a href="https://leetcode.cn/problems/find-n-unique-integers-sum-up-to-zero/">1304. 和为零的 N 个不同整数</a>
- * <ul>
- * <li>{@link Difficulty#Easy}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#Math}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2020.03.22 19:52
