@@ -3,26 +3,13 @@ package com.github.morningwn.t0001_t0500.t0401_t0500.t0441_t0450;
 import cn.hutool.json.JSONUtil;
 import com.github.morningwn.prefab.Out;
 import com.github.morningwn.prefab.TreeNode;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.Deque;
 import java.util.LinkedList;
 
-
 /**
  * <a href="https://leetcode.cn/problems/serialize-and-deserialize-bst/">449. 序列化和反序列化二叉搜索树</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#Tree}</li>
- * <li>{@link Topic#DepthFirstSearch}</li>
- * <li>{@link Topic#BreadthFirstSearch}</li>
- * <li>{@link Topic#Design}</li>
- * <li>{@link Topic#BinarySearchTree}</li>
- * <li>{@link Topic#String}</li>
- * <li>{@link Topic#BinaryTree}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2022/5/11 14:31
