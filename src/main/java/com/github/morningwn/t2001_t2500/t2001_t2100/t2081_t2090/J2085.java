@@ -1,22 +1,10 @@
 package com.github.morningwn.t2001_t2500.t2001_t2100.t2081_t2090;
 
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
-import org.junit.Test;
-
 import java.util.HashMap;
 import java.util.Map;
 
-
 /**
  * <a href="https://leetcode.cn/problems/count-common-words-with-one-occurrence/">2085. 统计出现过一次的公共字符串</a>
- * <ul>
- * <li>{@link Difficulty#Easy}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#HashTable}</li>
- * <li>{@link Topic#String}</li>
- * <li>{@link Topic#Counting}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2024-01-12 14:12:40
