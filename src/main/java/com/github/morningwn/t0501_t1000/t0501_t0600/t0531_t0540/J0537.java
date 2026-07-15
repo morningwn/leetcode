@@ -1,19 +1,10 @@
 package com.github.morningwn.t0501_t1000.t0501_t0600.t0531_t0540;
 
 import com.github.morningwn.prefab.Out;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
-
 
 /**
  * <a href="https://leetcode.cn/problems/complex-number-multiplication/">537. 复数乘法</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#Math}</li>
- * <li>{@link Topic#String}</li>
- * <li>{@link Topic#Simulation}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2020-03-05 21:00:52
