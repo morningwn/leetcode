@@ -1,8 +1,6 @@
 package com.github.morningwn.t1001_t1500.t1301_t1400.t1351_t1360;
 
 import com.github.morningwn.prefab.Out;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.ArrayList;
