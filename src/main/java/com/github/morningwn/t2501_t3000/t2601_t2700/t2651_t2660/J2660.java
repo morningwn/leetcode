@@ -1,16 +1,7 @@
 package com.github.morningwn.t2501_t3000.t2601_t2700.t2651_t2660;
 
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
-
-
 /**
  * <a href="https://leetcode.cn/problems/determine-the-winner-of-a-bowling-game/">2660. 保龄球游戏的获胜者</a>
- * <ul>
- * <li>{@link Difficulty#Easy}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#Simulation}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2023-12-27 10:29:36
