@@ -2,8 +2,6 @@ package com.github.morningwn.t1001_t1500.t1401_t1500.t1461_t1470;
 
 import com.github.morningwn.prefab.FormatInput;
 import com.github.morningwn.prefab.Out;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -11,15 +9,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-
 /**
  * <a href="https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/">1466. 重新规划路线</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#DepthFirstSearch}</li>
- * <li>{@link Topic#BreadthFirstSearch}</li>
- * <li>{@link Topic#Graph}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2023-12-07 16:02:38
