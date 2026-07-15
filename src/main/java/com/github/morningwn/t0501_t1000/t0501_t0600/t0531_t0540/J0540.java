@@ -1,18 +1,10 @@
 package com.github.morningwn.t0501_t1000.t0501_t0600.t0531_t0540;
 
 import com.github.morningwn.prefab.Out;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
-
 
 /**
  * <a href="https://leetcode.cn/problems/single-element-in-a-sorted-array/">540. 有序数组中的单一元素</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#BinarySearch}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2022-02-14 10:22:22
@@ -64,7 +56,6 @@ public class J0540 {
                     }
                 }
             }
-
 
         }
         return -1;
