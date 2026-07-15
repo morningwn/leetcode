@@ -1,24 +1,13 @@
 package com.github.morningwn.t1001_t1500.t1301_t1400.t1341_t1350;
 
 import com.github.morningwn.prefab.Out;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
 
-
 /**
  * <a href="https://leetcode.cn/problems/maximum-students-taking-exam/">1349. 参加考试的最大学生数</a>
- * <ul>
- * <li>{@link Difficulty#Hard}</li>
- * <li>{@link Topic#BitManipulation}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#DynamicProgramming}</li>
- * <li>{@link Topic#Bitmask}</li>
- * <li>{@link Topic#Matrix}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2023-12-26 15:46:04
