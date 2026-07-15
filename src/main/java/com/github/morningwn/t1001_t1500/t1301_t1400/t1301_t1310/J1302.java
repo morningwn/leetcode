@@ -1,22 +1,12 @@
 package com.github.morningwn.t1001_t1500.t1301_t1400.t1301_t1310;
 
 import com.github.morningwn.prefab.TreeNode;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
-import org.junit.Test;
 
 import java.util.Deque;
 import java.util.LinkedList;
 
 /**
  * <a href="https://leetcode.cn/problems/deepest-leaves-sum/">1302. 层数最深叶子节点的和</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#Tree}</li>
- * <li>{@link Topic#DepthFirstSearch}</li>
- * <li>{@link Topic#BreadthFirstSearch}</li>
- * <li>{@link Topic#BinaryTree}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2022.08.17 17:07
