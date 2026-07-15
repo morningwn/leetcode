@@ -1,20 +1,9 @@
 package com.github.morningwn.t2501_t3000.t2701_t2800.t2701_t2710;
 
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
-
-import java.util.HashMap;
-import java.util.Map;
-
 
 /**
  * <a href="https://leetcode.cn/problems/buy-two-chocolates/">2706. 购买两块巧克力</a>
- * <ul>
- * <li>{@link Difficulty#Easy}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#Sorting}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2023-12-29 10:27:42
