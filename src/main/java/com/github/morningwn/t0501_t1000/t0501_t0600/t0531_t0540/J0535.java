@@ -1,21 +1,12 @@
 package com.github.morningwn.t0501_t1000.t0501_t0600.t0531_t0540;
 
 import com.github.morningwn.prefab.Out;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.HashMap;
 
 /**
  * <a href="https://leetcode.cn/problems/encode-and-decode-tinyurl/">535. TinyURL 的加密与解密</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#Design}</li>
- * <li>{@link Topic#HashTable}</li>
- * <li>{@link Topic#String}</li>
- * <li>{@link Topic#HashFunction}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2019-09-22 14:16:42
@@ -28,7 +19,6 @@ public class J0535 {
         Out.println(codec.encode("https://leetcode.com/problems/design-tinyurl"));
         Out.println(codec.decode(codec.encode("https://leetcode.com/problems/design-tinyurl")));
     }
-
 
     class Codec {
 
