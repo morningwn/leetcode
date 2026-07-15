@@ -1,21 +1,14 @@
 package com.github.morningwn.t2001_t2500.t2001_t2100.t2001_t2010;
 
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <a href="https://leetcode.cn/problems/maximum-earnings-from-taxi/">2008. 出租车的最大盈利</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#BinarySearch}</li>
- * <li>{@link Topic#DynamicProgramming}</li>
- * <li>{@link Topic#Sorting}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2023-12-08 19:40:59
@@ -26,7 +19,6 @@ public class J2008 {
     public void test() {
 
     }
-
 
     public long maxTaxiEarnings(int n, int[][] rides) {
         Map<Integer, List<int[]>> rideMap = new HashMap<>();
