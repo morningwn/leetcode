@@ -1,16 +1,7 @@
 package com.github.morningwn.t1001_t1500.t1401_t1500.t1461_t1470;
 
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
-import org.junit.Test;
-
-
 /**
  * <a href="https://leetcode.cn/problems/shuffle-the-array/">1470. 重新排列数组</a>
- * <ul>
- * <li>{@link Difficulty#Easy}</li>
- * <li>{@link Topic#Array}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2020-07-20 17:52:52
