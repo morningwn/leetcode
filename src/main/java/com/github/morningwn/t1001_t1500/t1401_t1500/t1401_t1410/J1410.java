@@ -1,20 +1,12 @@
 package com.github.morningwn.t1001_t1500.t1401_t1500.t1401_t1410;
 
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
 
-
 /**
- * <a href="https://leetcode.cn/problems/html-entity-parser/">1,410. HTML 实体解析器</a>
- * <ul>
- * <li>{@link Difficulty#Medium}</li>
- * <li>{@link Topic#HashTable}</li>
- * <li>{@link Topic#String}</li>
- * </ul>
+ * <a href="https://leetcode.cn/problems/html-entity-parser/">1410. HTML 实体解析器</a>
  *
  * @author morningwn
  * @date 2023-11-23 10:54:48
