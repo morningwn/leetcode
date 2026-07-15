@@ -1,19 +1,10 @@
 package com.github.morningwn.t1001_t1500.t1401_t1500.t1461_t1470;
 
 import com.github.morningwn.prefab.Out;
-import com.github.morningwn.tag.Difficulty;
-import com.github.morningwn.tag.Topic;
 import org.junit.Test;
-
 
 /**
  * <a href="https://leetcode.cn/problems/maximum-product-of-two-elements-in-an-array/">1464. 数组中两元素的最大乘积</a>
- * <ul>
- * <li>{@link Difficulty#Easy}</li>
- * <li>{@link Topic#Array}</li>
- * <li>{@link Topic#Sorting}</li>
- * <li>{@link Topic#PriorityQueue}</li>
- * </ul>
  *
  * @author morningwn
  * @date 2022-08-26 19:16:36
